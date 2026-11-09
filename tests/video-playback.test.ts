@@ -28,3 +28,14 @@ describe('showreel mosaic playback',()=>{
   expect(chooseVisiblePlayers([a,b])).toEqual([a]);
  });
 });
+
+describe('linear playback selection',()=>{
+ it('keeps the strongest grouped player first without sorting the full player registry',()=>{
+  const smaller={...loop(.2),group:'mosaic'},stronger={...loop(.8),group:'mosaic'};
+  expect(chooseVisiblePlayer([smaller,stronger])).toBe(stronger);
+ });
+ it('keeps registration order when equally visible groups compete',()=>{
+  const first={...loop(.5),group:'first'},second={...loop(.5),group:'second'};
+  expect(chooseVisiblePlayers([first,second])).toEqual([first]);
+ });
+});

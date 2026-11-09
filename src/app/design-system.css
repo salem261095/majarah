@@ -20,68 +20,36 @@
 }
 
 :root {
+  /* Short UI transitions shared by buttons and playback controls. */
+  --motion-short: 200ms;
+  --cursor-star-size: 32px;
+  --cursor-color-dark: var(--color-white);
+  --cursor-color-light: var(--color-brand-purple);
+  --cursor-native-dark: url('/brand-cursor-light.svg') 16 16;
+  --cursor-native-light: url('/brand-cursor.svg') 16 16;
+  --leading-1: 1;
+  --color-surface-panel: #12101d;
   --font-latin: 'DM Sans',Arial,sans-serif;
   --font-label: Arial,sans-serif;
   --font-mono: monospace;
   /* Supporting tones preserve the approved existing artwork and interface. */
-  --color-surface-panel: #12101d;
   --color-paper: #f4f0e9;
   --color-text-muted: #a09ba9;
   --color-white: #ffffff;
   --color-accent-light: #c6b5ff;
-  --color-tone-4e3fb5: #4e3fb5;
-  --color-tone-30219f: #30219f;
-  --color-tone-c2bdc9: #c2bdc9;
   --color-tone-392b3a: #392b3a;
-  --color-tone-0e071b: #0e071b;
-  --color-tone-080611: #080611;
-  --color-tone-ded7df: #ded7df;
-  --color-tone-cec0ff: #cec0ff;
-  --color-tone-e1dae5: #e1dae5;
   --color-tone-ddd0fb: #ddd0fb;
-  --color-tone-e0dce3: #e0dce3;
-  --color-tone-c3b9c4: #c3b9c4;
-  --color-tone-b4aeb7: #b4aeb7;
-  --color-tone-d8cfdc: #d8cfdc;
-  --color-tone-c3bdce: #c3bdce;
-  --color-tone-71697f: #71697f;
-  --color-tone-25202e: #25202e;
-  --color-tone-7f788c: #7f788c;
-  --color-tone-151020: #151020;
-  --color-tone-20123f: #20123f;
-  --color-tone-c4bbd3: #c4bbd3;
-  --color-tone-888093: #888093;
-  --color-tone-c0b6e3: #c0b6e3;
-  --color-tone-c5bdea: #c5bdea;
   --color-tone-716983: #716983;
-  --color-tone-655397: #655397;
-  --color-tone-c8c1d4: #c8c1d4;
-  --color-tone-f1a6ac: #f1a6ac;
   --color-black: #000000;
   --color-tone-080808: #080808;
   --color-tone-191919: #191919;
   --color-tone-8a8a8a: #8a8a8a;
-  --color-tone-aaa6ae: #aaa6ae;
-  --color-tone-efeeeb: #efeeeb;
-  --color-tone-bdb7c1: #bdb7c1;
-  --color-tone-c4bec8: #c4bec8;
-  --color-tone-e6e4e7: #e6e4e7;
-  --color-tone-767078: #767078;
-  --color-tone-8c858f: #8c858f;
   --color-tone-f2f2f2: #f2f2f2;
-  --color-tone-79757c: #79757c;
-  --color-tone-8a838e: #8a838e;
-  --color-tone-827b87: #827b87;
   --color-tone-747078: #747078;
-  --color-tone-929094: #929094;
-  --color-tone-8e878f: #8e878f;
   --color-tone-918a95: #918a95;
   --color-tone-e4dce8: #e4dce8;
   --color-tone-9f91a9: #9f91a9;
-  --color-tone-8e8993: #8e8993;
-  --color-tone-8b7a94: #8b7a94;
   --color-tone-f2f1ed: #f2f1ed;
-  --color-tone-b7afb9: #b7afb9;
   --color-tone-8a7c94: #8a7c94;
   --color-tone-6e5b7c: #6e5b7c;
   --color-tone-938a99: #938a99;
@@ -90,44 +58,20 @@
   --color-tone-83758d: #83758d;
   --color-tone-82778b: #82778b;
   --color-tone-a294ad: #a294ad;
-  --color-tone-8b8091: #8b8091;
   --color-tone-baabc5: #baabc5;
   --color-tone-8f7c9e: #8f7c9e;
   --color-tone-96849e: #96849e;
-  --color-tone-b58bcd: #b58bcd;
   --color-tone-f5f1eb: #f5f1eb;
-  --color-tone-9c86aa: #9c86aa;
-  --color-tone-bea2d0: #bea2d0;
   --color-tone-100c18: #100c18;
   --color-tone-b890da: #b890da;
   --color-tone-e4cfef: #e4cfef;
-  --color-tone-9272a7: #9272a7;
-  --color-tone-b6a1c2: #b6a1c2;
   --color-tone-d8c8e3: #d8c8e3;
-  --color-tone-9971b1: #9971b1;
-  --color-tone-a38daf: #a38daf;
   --color-tone-a98cb9: #a98cb9;
   --color-tone-9257c1: #9257c1;
-  --color-tone-b7b0bd: #b7b0bd;
-  --color-tone-b5a9bf: #b5a9bf;
-  --color-tone-d0cbd6: #d0cbd6;
-  --color-tone-b6b0bd: #b6b0bd;
-  --color-tone-797381: #797381;
   --color-tone-bdb5c6: #bdb5c6;
-  --color-tone-746e7d: #746e7d;
-  --color-tone-c1bbc8: #c1bbc8;
-  --color-tone-77717f: #77717f;
-  --color-tone-746c7e: #746c7e;
   --color-tone-c6c0cd: #c6c0cd;
   --color-tone-807888: #807888;
   --color-tone-b9a1cc: #b9a1cc;
-  --color-tone-807889: #807889;
-  --color-tone-d2ccd9: #d2ccd9;
-  --color-tone-57505f: #57505f;
-  --color-tone-7e7589: #7e7589;
-  --color-tone-12111b: #12111b;
-  --color-tone-9c93a6: #9c93a6;
-  --color-tone-8f8799: #8f8799;
   --color-tone-b7adbf: #b7adbf;
   --color-tone-aaa5b2: #aaa5b2;
   --color-tone-c1b8ca: #c1b8ca;
@@ -135,19 +79,10 @@
   --color-tone-a875cc: #a875cc;
   --color-tone-c4b8ce: #c4b8ce;
   --color-tone-d4c8de: #d4c8de;
-  --color-tone-aaa1b5: #aaa1b5;
-  --color-tone-79568d: #79568d;
   --color-tone-ad9bb9: #ad9bb9;
-  --color-tone-756d7d: #756d7d;
-  --color-tone-ded8e0: #ded8e0;
-  --color-tone-706978: #706978;
-  --color-tone-82798a: #82798a;
   --color-tone-a79faf: #a79faf;
-  --color-tone-9b91a5: #9b91a5;
   --color-tone-8b8097: #8b8097;
   --color-tone-17131e: #17131e;
-  --color-tone-aaa1b2: #aaa1b2;
-  --color-tone-c4bbc9: #c4bbc9;
   --color-tone-a59aa9: #a59aa9;
   --color-tone-8e8296: #8e8296;
   --color-tone-918398: #918398;
@@ -157,8 +92,6 @@
   --color-tone-665e70: #665e70;
   --color-tone-b4a5c0: #b4a5c0;
   --color-tone-776087: #776087;
-  --color-tone-d0c5d9: #d0c5d9;
-  --color-tone-6f647a: #6f647a;
   --color-tone-a99ab4: #a99ab4;
   --color-tone-d2c6db: #d2c6db;
   --color-tone-a388b9: #a388b9;
@@ -168,7 +101,6 @@
   --color-tone-d2c8d9: #d2c8d9;
   --color-tone-b7aabd: #b7aabd;
   --color-tone-c3b3cd: #c3b3cd;
-  --color-tone-b1a5bc: #b1a5bc;
   --color-tone-706477: #706477;
   --color-tone-c1b5cb: #c1b5cb;
   --color-tone-74607f: #74607f;
@@ -240,14 +172,11 @@
   --space-80px: 80px;
   --space-26px: 26px;
   --space-50px: 50px;
-  --space-130px: 130px;
   --space-45px: 45px;
   --space-16px: 16px;
   --space-55px: 55px;
-  --space-34px: 34px;
   --space-19px: 19px;
   --space-7px: 7px;
-  --space-1px: 1px;
   --space-38px: 38px;
   --space-40px: 40px;
   --space-14px: 14px;
@@ -263,30 +192,22 @@
   --space-170px: 170px;
   --space-165px: 165px;
   --space-18px: 18px;
-  --space-158px: 158px;
   --space-27px: 27px;
   --space-150px: 150px;
   --space-4px: 4px;
-  --space-2px: 2px;
   --space-5px: 5px;
   --space-p3em: .3em;
-  --space-negative-9px: -9px;
   --space-33p333percent: 33.333%;
   --space-negative-150vw: -150vw;
   --space-negative-150svh: -150svh;
   --space-85px: 85px;
-  --space-31percent: 31%;
-  --space-125px: 125px;
   --space-6vw: 6vw;
   --space-7vw: 7vw;
-  --space-8percent: 8%;
   --space-10vw: 10vw;
   --space-5vw: 5vw;
   --space-78px: 78px;
   --space-21px: 21px;
-  --space-53px: 53px;
   --space-72px: 72px;
-  --space-negative-5px: -5px;
   --space-p35em: .35em;
   --space-negative-15px: -15px;
   --space-4vw: 4vw;
@@ -322,7 +243,6 @@
   --weight-600: 600;
   --weight-700: 700;
   --weight-750: 750;
-  --weight-900: 900;
   --weight-550: 550;
   --weight-650: 650;
   --weight-850: 850;
@@ -344,7 +264,6 @@
   --text-16px: 16px;
   --text-24px: 24px;
   --text-34px: 34px;
-  --text-018: clamp(35px,5.8vw,87px);
   --text-18px: 18px;
   --text-14px: 14px;
   --text-32px: 32px;
@@ -359,83 +278,40 @@
   --text-55px: 55px;
   --text-26px: 26px;
   --text-7px: 7px;
-  --text-35px: 35px;
   --text-034: clamp(59px,12vw,85px);
   --text-30px: 30px;
   --text-21px: 21px;
-  --text-42px: 42px;
   --text-23px: 23px;
-  --text-039: clamp(48px,11vw,72px);
   --text-52px: 52px;
   --text-27px: 27px;
   --text-29px: 29px;
   --text-043: clamp(55px,11vw,80px);
-  --text-340px: 340px;
-  --text-045: clamp(28px,4.3vw,68px);
-  --text-046: clamp(40px,5.05vw,78px);
   --text-047: clamp(43px,5vw,80px);
   --text-048: clamp(28px,3.5vw,54px);
-  --text-049: clamp(68px,8vw,130px);
   --text-050: clamp(80px,9vw,145px);
   --text-8p5vw: 8.5vw;
   --text-28px: 28px;
   --text-053: clamp(45px,5vw,80px);
-  --text-054: clamp(75px,9vw,145px);
   --text-80px: 80px;
   --text-056: clamp(150px,26vw,450px);
-  --text-057: clamp(22px,3vw,45px);
   --text-058: clamp(30px,4.5vw,65px);
-  --text-4p9vw: 4.9vw;
-  --text-8vw: 8vw;
-  --text-061: clamp(26px,7vw,42px);
-  --text-062: clamp(27px,7vw,43px);
   --text-48px: 48px;
   --text-064: clamp(52px,13vw,85px);
   --text-10vw: 10vw;
   --text-43px: 43px;
-  --text-65px: 65px;
   --text-30vw: 30vw;
   --text-40px: 40px;
-  --text-6px: 6px;
-  --text-3p5vw: 3.5vw;
-  --text-072: clamp(35px,4.7vw,72px);
-  --text-073: clamp(20px,2.2vw,33px);
-  --text-074: clamp(42px,6.2vw,96px);
-  --text-5vw: 5vw;
-  --text-076: clamp(31px,8vw,54px);
-  --text-077: clamp(27px,6.7vw,45px);
-  --text-078: clamp(28px,3vw,43px);
-  --text-079: clamp(21px,2vw,30px);
-  --text-080: clamp(21px,2.2vw,32px);
-  --text-081: clamp(22px,3vw,43px);
-  --text-082: clamp(43px,5.2vw,80px);
-  --text-2vw: 2vw;
-  --text-084: clamp(135px,20vw,310px);
-  --text-60px: 60px;
-  --text-150px: 150px;
   --text-role-display-mobile: clamp(48px,11vw,76px);
   --text-role-heading-mobile: clamp(32px,7.8vw,51px);
-  --text-28vw: 28vw;
-  --text-12vw: 12vw;
-  --text-46px: 46px;
   --text-19px: 19px;
-  --text-39px: 39px;
   --text-094: clamp(80px,15vw,220px);
-  --text-095: clamp(130px,min(28vw,36svh),430px);
-  --text-096: clamp(26px,3.3vw,52px);
-  --text-097: clamp(115px,30vw,220px);
-  --text-098: clamp(22px,6vw,32px);
   --text-099: clamp(48px,6.6vw,106px);
   --text-100: clamp(35px,4.8vw,76px);
-  --text-101: clamp(38px,5.7vw,90px);
-  --text-102: clamp(28px,3.3vw,50px);
   --text-103: clamp(52px,9vw,145px);
   --text-1p6vw: 1.6vw;
   --text-105: clamp(30px,5vw,80px);
   --text-106: clamp(40px,10.5vw,70px);
   --text-107: clamp(30px,8vw,50px);
-  --text-108: clamp(29px,7.2vw,50px);
-  --text-109: clamp(25px,6.8vw,38px);
   --text-110: clamp(27px,8vw,45px);
   --text-role-meta: clamp(.75rem,.71rem + .16vw,.875rem);
   --text-role-label: clamp(.875rem,.83rem + .14vw,1rem);
@@ -475,7 +351,6 @@
   --leading-1p1: 1.1;
   --leading-1p75: 1.75;
   --leading-1p5: 1.5;
-  --leading-1: 1;
   --leading-1p15: 1.15;
   --leading-1p8: 1.8;
   --leading-1p2: 1.2;
@@ -486,16 +361,12 @@
   --leading-1p25: 1.25;
   --leading-1p4: 1.4;
   --leading-1p9: 1.9;
-  --leading-1p55: 1.55;
-  --leading-2p05: 2.05;
   --leading-1p3: 1.3;
   --leading-2: 2;
   --leading-2p2: 2.2;
   --leading-2p1: 2.1;
   --leading-2p15: 2.15;
-  --leading-2p4: 2.4;
   --leading-1p65: 1.65;
-  --leading-1p45: 1.45;
   --leading-1p12: 1.12;
   --leading-1p24: 1.24;
   --leading-1p22: 1.22;
@@ -503,17 +374,7 @@
   --tracking-negative-p065em: -.065em;
   --tracking-negative-p05em: -.05em;
   --tracking-negative-p035em: -.035em;
-  --tracking-p13em: .13em;
   --tracking-p25em: .25em;
-  --tracking-p14em: .14em;
-  --tracking-p06em: .06em;
-  --tracking-p1em: .1em;
-  --tracking-p2em: .2em;
-  --tracking-p04em: .04em;
-  --tracking-p18em: .18em;
-  --tracking-p03em: .03em;
-  --tracking-p15em: .15em;
-  --tracking-negative-p03em: -.03em;
   --tracking-negative-p015em: -.015em;
   --tracking-negative-3px: -3px;
   --tracking-negative-p06em: -.06em;
@@ -522,44 +383,24 @@
   --tracking-negative-p02em: -.02em;
   --tracking-negative-p08em: -.08em;
   --tracking-0: 0;
-  --tracking-negative-p075em: -.075em;
   --tracking-p22em: .22em;
   /* Corner radii */
   --radius-small: 2px;
   --radius-round: 50%;
   --radius-none: 0;
-  --radius-medium: 3px;
   --space-6vh: 6vh;
   --space-50percent: 50%;
-  --space-28percent: 28%;
-  --space-30percent: 30%;
   --space-86percent: 86%;
   --space-negative-25px: -25px;
   --space-9percent: 9%;
   --space-2percent: 2%;
   --space-7percent: 7%;
-  --space-negative-100px: -100px;
-  --space-33px: 33px;
-  --space-48percent: 48%;
-  --space-negative-3px: -3px;
-  --space-negative-10000px: -10000px;
   --space-13percent: 13%;
   --space-90percent: 90%;
   --space-17percent: 17%;
   --space-10percent: 10%;
-  --space-4percent: 4%;
-  --space-145px: 145px;
-  --space-155px: 155px;
   --space-negative-10percent: -10%;
-  --space-15percent: 15%;
-  --space-5percent: 5%;
-  --space-210px: 210px;
   --space-6percent: 6%;
-  --space-12percent: 12%;
-  --space-78percent: 78%;
-  --space-74px: 74px;
-  --space-73px: 73px;
-  --space-93percent: 93%;
 }
 
 @font-face {
@@ -581,7 +422,6 @@
 
 :root {
   --bg: var(--color-brand-midnight);
-  --surface: var(--color-surface-panel);
   --ink: var(--color-paper);
   --muted: var(--color-text-muted);
   --line: color-mix(in srgb, var(--color-white) 12.941176%, transparent);
@@ -618,27 +458,12 @@ html[lang=ar] {
 
 /* Scoped roles from premium-editorial.css; original cascade order retained. */
 
-.hd-1 {
-  --accent: var(--action);
-  --primary: var(--action);
-  --night: var(--canvas);
-  --ink: var(--foreground);
-  --pad: var(--page-gutter);
-  --line: var(--rule);
-}
-
-.pc-home {
-  --pc-body: var(--type-body);
-}
-
 @media (max-width:760px) {
   :root {
     --type-display: var(--text-role-display-mobile);
     --type-heading: var(--text-role-heading-mobile);
     --type-body: var(--text-12px);
     --type-meta: var(--text-10px);
-    --page-gutter: var(--space-6vw);
-    --section-space: var(--space-65px);
   }
 }
 
@@ -752,4 +577,26 @@ html[lang=ar] {
     --client-logo-width: 95px;
     --client-logo-height: 54px;
   }
+}
+
+/* Process panel stays with its heading; the whole brand surface releases after the last stage. */
+.ni-process-timeline {
+  --process-dot-size: 18px;
+  --process-line-top: calc(var(--type-meta) + var(--space-20px) + var(--process-dot-size) / 2);
+  --process-background: var(--color-brand-deep);
+  --process-foreground: var(--color-paper);
+  --process-accent: var(--color-accent-light);
+  --process-scroll-distance: 110svh;
+  --process-sticky-top: var(--hero-header-height);
+  --process-mobile-step-width: calc(100vw - 2 * var(--ni-gutter));
+}
+@media(max-width:760px) {
+  .ni-process-timeline { --process-scroll-distance: 150svh; }
+}
+
+/* Static native cursors also keep contrast when reduced motion disables the animated layer. */
+.ni-home { --native-star-cursor: var(--cursor-native-dark); }
+.ni-light,.ip-light { --native-star-cursor: var(--cursor-native-light); }
+.ip-dark,.ip-violet,.rh-header,.ni-footer,.ni-dialog,.ni-process-timeline {
+  --native-star-cursor: var(--cursor-native-dark);
 }

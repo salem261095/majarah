@@ -9,7 +9,10 @@
 .co-opening-mark{font-size:var(--text-094);font-weight:var(--weight-750);line-height:var(--leading-1p4);filter:blur(22px);opacity:0;white-space:nowrap;letter-spacing:normal}
 .co-opening-signature{position:absolute;bottom:var(--space-6vh);left:var(--space-50percent);transform:translateX(-50%);font-size:var(--text-24px);line-height:var(--leading-1p4);font-weight:var(--weight-650);letter-spacing:normal}
 .co-opening-seam{position:absolute;top:0;bottom:0;left:var(--space-50percent);width:1px;background:color-mix(in srgb, var(--color-white) 10.980392%, transparent);opacity:0;pointer-events:none}
-.co-opening>button{position:absolute;bottom:var(--space-25px);left:var(--ni-gutter,24px);z-index:2;font-size:var(--text-14px);line-height:var(--leading-1p6);color:var(--color-tone-b7adbf);padding:var(--space-10px)}
+.co-opening>button{position:absolute;bottom:var(--space-25px);z-index:2;color:var(--color-tone-b7adbf);padding:var(--space-10px)}
 .co-opening>button:hover{color:var(--color-white)}
 @keyframes co-opening-failsafe{to{opacity:0;visibility:hidden;pointer-events:none}}
 @media(prefers-reduced-motion:reduce){.co-opening{display:none!important}}
+
+/* Returning visits skip the shutters before hydration, without a black flash. */
+html[data-majarra-opening=done] .co-opening{display:none}

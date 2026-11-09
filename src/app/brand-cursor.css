@@ -1,7 +1,14 @@
-/* Native favicon cursor: exact pointer tracking, no extra animation loop or touch cursor. */
+/* Transparent star fallback for reduced motion, unavailable JS and older browsers. */
 @media(hover:hover) and (pointer:fine){
- .ni-home,.ni-home *{cursor:url('/brand-cursor.svg') 16 16,auto}
- .ni-home :is(a,button,select,summary,[role=button]){cursor:url('/brand-cursor.svg') 16 16,pointer}
- .ni-home :is(input,textarea,[contenteditable=true]){cursor:text}
- .ni-home :is(button:disabled,select:disabled){cursor:not-allowed}
+ .ni-home,.ni-home *{cursor:var(--native-star-cursor),auto}
+ .ni-home :is(a,button,select,summary,[role=button]){cursor:var(--native-star-cursor),pointer}
+ html[data-star-cursor=active] .ni-home,html[data-star-cursor=active] .ni-home *{cursor:none}
+ .ni-home :is(input,textarea,[contenteditable=true]),html[data-star-cursor=active] .ni-home :is(input,textarea,[contenteditable=true]){cursor:text}
+ .ni-home :is(button:disabled,select:disabled,input:disabled){cursor:not-allowed}
 }
+.brand-star-layer{position:fixed;inset:0;width:100%;height:100%;max-width:none;max-height:none;margin:0;padding:0;border:0;background:transparent;overflow:clip;pointer-events:none;z-index:2147483647;color:var(--color-brand-purple)}
+.brand-star-layer::backdrop{background:transparent;pointer-events:none}
+.brand-star-main,.brand-star-particle{position:absolute;left:0;top:0;width:var(--cursor-star-size);height:var(--cursor-star-size);transform-origin:center;pointer-events:none;will-change:transform,opacity}
+.brand-star-main{opacity:0;z-index:1;color:var(--cursor-color-light);transition:color var(--motion-short) ease}
+.brand-star-layer[data-tone=dark] .brand-star-main{color:var(--cursor-color-dark)}
+.brand-star-main>svg,.brand-star-particle>svg{display:block;width:100%;height:100%}

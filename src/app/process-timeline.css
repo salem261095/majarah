@@ -1,0 +1,41 @@
+/* One compact brand panel: heading and timeline remain together, then leave together. */
+.ni-home .ni-process-timeline{display:block;padding:0 var(--ni-gutter);direction:rtl;background:var(--process-background);color:var(--process-foreground)}
+.ni-timeline-story{position:relative}
+.ni-timeline-sticky{position:relative;padding-block:var(--space-40px) var(--space-40px)}
+.ni-process-timeline .ni-section-heading{position:relative;top:auto;padding:0 0 var(--space-40px)}
+.ni-home .ni-process-timeline .ni-section-index>p{color:color-mix(in srgb,var(--process-foreground) 78%,transparent)}
+.ni-process-timeline .ni-stamp small{color:var(--process-accent)}
+.ni-process-timeline .ni-section-note{color:color-mix(in srgb,var(--process-foreground) 66%,transparent)}
+.ni-timeline-window{position:relative;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;scrollbar-color:var(--process-accent) transparent;overscroll-behavior-inline:contain;padding-block:var(--space-20px)}
+.ni-timeline-track{position:relative;width:100%}
+.ni-timeline-line{position:absolute;inset-inline:0;top:var(--process-line-top);height:1px;background:color-mix(in srgb,var(--process-foreground) 24%,transparent)}
+.ni-timeline-fill{display:block;width:100%;height:100%;background:var(--process-accent);transform-origin:right center}
+.ni-timeline-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));list-style:none;padding:0;margin:0;direction:rtl}
+.ni-timeline-step{position:relative;text-align:center;padding-inline:var(--space-20px)}
+.ni-timeline-number{display:block;font-family:var(--font-label);font-size:var(--type-meta);font-weight:var(--weight-500);line-height:var(--leading-1);color:var(--process-accent);margin-bottom:var(--space-20px)}
+.ni-timeline-dot{position:relative;display:block;width:var(--process-dot-size);height:var(--process-dot-size);margin-inline:auto;border-radius:var(--radius-round);background:var(--process-foreground);transition:background var(--motion-short),box-shadow var(--motion-short)}
+.ni-timeline-step.is-reached .ni-timeline-dot{background:var(--process-accent)}
+.ni-timeline-step.is-current .ni-timeline-dot{box-shadow:0 0 0 var(--space-6px) color-mix(in srgb,var(--process-accent) 18%,transparent)}
+.ni-home .ni-timeline-step h3{font-size:var(--type-title);font-weight:var(--weight-550);line-height:var(--type-title-leading);letter-spacing:normal;margin-top:var(--space-28px);text-wrap:balance}
+.ni-home .ni-timeline-step p{font-size:var(--type-body);line-height:var(--type-body-leading);color:color-mix(in srgb,var(--process-foreground) 82%,transparent);max-width:29ch;margin:var(--space-20px) auto 0;text-wrap:pretty}
+.ni-process-timeline[data-timeline-animated=true] .ni-timeline-story::after{content:'';display:block;height:var(--process-scroll-distance)}
+.ni-process-timeline[data-timeline-animated=true] .ni-timeline-sticky{position:sticky;top:var(--process-sticky-top)}
+.ni-process-timeline[data-timeline-animated=true] .ni-timeline-window{overflow:clip}
+@media(max-width:760px){
+ .ni-timeline-track{width:calc(4 * var(--process-mobile-step-width))}
+ .ni-timeline-steps{grid-template-columns:repeat(4,var(--process-mobile-step-width))}
+ .ni-timeline-step{padding-inline:var(--space-16px)}
+ .ni-home .ni-timeline-step p{max-width:27ch;text-align:right}
+ .ni-timeline-sticky{padding-block:var(--space-16px)}
+ .ni-timeline-window{padding-block:var(--space-12px)}
+ .ni-home .ni-process-timeline .ni-section-heading .ni-section-title{font-size:var(--type-title)}
+ .ni-home .ni-timeline-step h3{margin-top:var(--space-20px)}
+ .ni-home .ni-timeline-step p{margin-top:var(--space-16px)}
+ .ni-process-timeline .ni-section-heading{gap:var(--space-12px);padding-bottom:var(--space-16px)}
+ .ni-process-timeline .ni-section-index{display:contents}
+ .ni-process-timeline .ni-section-title-block{order:1}
+ .ni-process-timeline .ni-section-index>.ni-stamp{order:0}
+ .ni-home .ni-process-timeline .ni-section-index>p{order:2;font-size:var(--type-meta);max-width:none}
+ .ni-process-timeline .ni-section-note{margin-top:var(--space-8px);font-size:var(--type-meta)}
+}
+@media(prefers-reduced-motion:reduce){.ni-timeline-dot{transition:none}}

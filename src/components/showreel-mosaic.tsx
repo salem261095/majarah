@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import { requestVideoFrame } from '@/lib/media-coordinator';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { EditorialVideo } from './editorial-video';
 import { getVideoAsset } from '@/lib/assets';
@@ -16,7 +17,7 @@ export function ShowreelMosaic({paused}:{paused:boolean}){
   media.add({all:'(min-width:0px)',desktop:'(min-width:761px)',reduced:'(prefers-reduced-motion:reduce)'},context=>{
    if(context.conditions?.reduced)return;
    gsap.set(mosaic,{x:0,y:0,xPercent:-50,yPercent:-50,scale:1});
-   const timeline=gsap.timeline({onUpdate:()=>window.dispatchEvent(new Event('majarra:media-frame')),scrollTrigger:{trigger:section,start:'top top',end:'bottom bottom',scrub:.65,invalidateOnRefresh:true}});
+   const timeline=gsap.timeline({onUpdate:()=>requestVideoFrame('showreel-mosaic'),scrollTrigger:{trigger:section,start:'top top',end:'bottom bottom',scrub:.65,invalidateOnRefresh:true}});
    timeline.to(mosaic,{scale:1,duration:.12,ease:'none'},0)
     .to(mosaic,{scale:context.conditions?.desktop?.43:.52,duration:.76,ease:'power2.inOut'},.12)
     .to(heading,{opacity:0,filter:'blur(8px)',duration:.25,ease:'none'},.2)

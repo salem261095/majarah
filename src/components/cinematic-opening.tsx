@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
+import { openingSession, openingStorage } from '@/lib/opening-session';
 /** Opposing shutters reveal the hero; skip, reduced motion and a timeout release the page. */
 export function CinematicOpening({paused}:{paused:boolean}){
  const root=useRef<HTMLDivElement>(null),finish=useRef<()=>void>(()=>{});
@@ -12,11 +13,12 @@ export function CinematicOpening({paused}:{paused:boolean}){
   const old=document.body.style.overflow;
   const complete=()=>{
    if(finished)return;finished=true;timeline?.kill();
+   openingSession.remember(openingStorage());
    document.documentElement.dataset.majarraOpening='done';document.body.style.overflow=old;
    setDone(true);window.dispatchEvent(new Event('majarra:opening-complete'));
   };
   finish.current=complete;
-  if(paused||reduced.matches){complete();return}
+  if(openingSession.hasSeen(openingStorage())||paused||reduced.matches){complete();return}
   document.documentElement.dataset.majarraOpening='pending';
   document.body.style.overflow='hidden';node.style.animation='none';
   const context=gsap.context(()=>{

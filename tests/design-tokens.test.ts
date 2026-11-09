@@ -25,7 +25,7 @@ describe('central design tokens',()=>{
   const names=new Set<string>();tokens.walkDecls(decl=>{names.add(decl.prop)});
   for(const {file,value} of [...declarations,{file:'design-system.css',value:tokens.toString()}]){
    expect(value,file).not.toMatch(/var\(--[^(),\s]*var\(/);
-   for(const match of value.matchAll(/var\((--(?:color-|space-|text-|weight-|leading-|tracking-|radius-|font-(?:arabic|handwritten|latin|label|mono)\b|client-(?:row-height|cell-width|logo-width|logo-height|static-cell-height)\b)[\w-]*)/g))expect(names.has(match[1]),`${file}: ${match[1]}`).toBe(true);
+   for(const match of value.matchAll(/var\((--(?:color-|space-|text-|weight-|leading-|tracking-|radius-|cursor-|font-(?:arabic|handwritten|latin|label|mono)\b|client-(?:row-height|cell-width|logo-width|logo-height|static-cell-height)\b)[\w-]*)/g))expect(names.has(match[1]),`${file}: ${match[1]}`).toBe(true);
   }
  });
 });
