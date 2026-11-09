@@ -1,10 +1,10 @@
 /* Creative production uses a solid brand violet and paired moving media. */
-.ni-home .ni-services{position:relative;isolation:isolate;background:#15076e}
-.ni-services .ni-section-index>p,.ni-services .ni-service-details>p{color:#ded5e6}
-.ni-services .ni-section-note,.ni-services .ni-rail-label,.ni-services .ni-service-panel-top{color:#cfc0dc}
-.ni-services .ni-stamp small,.ni-services .ni-service-number,.ni-services .ni-service-heading>nav>a>span:first-child{color:#e6d5f2}
-.ni-services .ni-service-panel,.ni-services .ni-service-heading>nav>a{border-color:#ffffff35}
-.ni-services .ni-service-details li{border-color:#ffffff2b;color:#e4daeb}
+.ni-home .ni-services{position:relative;isolation:isolate;background:var(--color-brand-deep)}
+.ni-services .ni-section-index>p,.ni-services .ni-service-details>p{color:var(--color-tone-ded5e6)}
+.ni-services .ni-section-note,.ni-services .ni-rail-label,.ni-services .ni-service-panel-top{color:var(--color-tone-cfc0dc)}
+.ni-services .ni-stamp small,.ni-services .ni-service-number,.ni-services .ni-service-heading>nav>a>span:first-child{color:var(--color-tone-e6d5f2)}
+.ni-services .ni-service-panel,.ni-services .ni-service-heading>nav>a{border-color:color-mix(in srgb, var(--color-white) 20.784314%, transparent)}
+.ni-services .ni-service-details li{border-color:color-mix(in srgb, var(--color-white) 16.862745%, transparent);color:var(--color-tone-e4daeb)}
 .ni-home .ni-service-visuals>.ni-service-landscape{height:auto;aspect-ratio:16/9;align-self:end;overflow:hidden}
 .ni-service-landscape>.es-video{width:100%;height:100%;background:transparent}
 .ni-service-landscape video{width:100%;height:100%;object-fit:cover}

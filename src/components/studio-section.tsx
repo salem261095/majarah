@@ -15,7 +15,8 @@ export function StudioSection({paused}:{paused:boolean}){
   const media=gsap.matchMedia();
   media.add('(prefers-reduced-motion: no-preference)',()=>{
    const words=section.querySelectorAll('.ni-studio-word'),heading=section.querySelector('.ni-studio-title');
-   const reading=gsap.fromTo(words,{color:'#b0a0bc'},{color:'#0b0915',stagger:{amount:1},ease:'none',scrollTrigger:{trigger:heading,start:'top 82%',end:'bottom 42%',scrub:.6}});
+   const tokens=getComputedStyle(section);
+   const reading=gsap.fromTo(words,{color:tokens.getPropertyValue('--color-text-reading').trim()},{color:tokens.getPropertyValue('--color-brand-midnight').trim(),stagger:{amount:1},ease:'none',scrollTrigger:{trigger:heading,start:'top 82%',end:'bottom 42%',scrub:.6}});
    const closing=gsap.fromTo(section.querySelector('.ni-studio-closing'),{opacity:.2,y:15},{opacity:1,y:0,ease:'none',scrollTrigger:{trigger:section.querySelector('.ni-studio-closing'),start:'top 94%',end:'top 76%',scrub:.4}});
    const update=()=>[reading,closing].forEach(animation=>{if(pausedState.current)animation.scrollTrigger?.disable(false);else animation.scrollTrigger?.enable(false)});
    sync.current=update;update();

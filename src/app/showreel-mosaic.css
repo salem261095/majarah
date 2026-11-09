@@ -1,9 +1,9 @@
 /* Keep the cinematic scroll reel independent from service layouts and page entrance effects. */
-.ni-showreel .ni-reel-story{position:relative;height:340svh;background:#000}
-.ni-showreel .ni-reel-sticky{position:sticky;top:0;width:100%;height:100svh;overflow:hidden;background:#000}
-.ni-showreel .ni-mosaic{position:absolute;left:50%;top:50%;width:300%;height:300%;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));direction:ltr;transform:translate(-50%,-50%) scale(1);transform-origin:center;will-change:transform}
+.ni-showreel .ni-reel-story{position:relative;height:340svh;background:var(--color-black)}
+.ni-showreel .ni-reel-sticky{position:sticky;top:0;width:100%;height:100svh;overflow:hidden;background:var(--color-black)}
+.ni-showreel .ni-mosaic{position:absolute;left:var(--space-50percent);top:var(--space-50percent);width:300%;height:300%;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));direction:ltr;transform:translate(-50%,-50%) scale(1);transform-origin:center;will-change:transform}
 .ni-showreel .ni-mosaic-tile{min-width:0;min-height:0;overflow:hidden}
-.ni-showreel .ni-reel-title{display:flex;align-items:center;justify-content:center;inset:0;margin:0;padding:25px;pointer-events:none;text-align:center}
+.ni-showreel .ni-reel-title{display:flex;align-items:center;justify-content:center;inset:0;margin:0;padding:var(--space-25px);pointer-events:none;text-align:center}
 @media(max-width:760px){.ni-showreel .ni-reel-story{height:280svh}}
 /* A pause freezes the current zoom. Reduced motion presents the complete visual composition. */
 @media(prefers-reduced-motion:reduce){.ni-showreel .ni-reel-story{height:auto}.ni-showreel .ni-reel-sticky{position:relative;height:85svh}.ni-showreel .ni-mosaic{transform:translate(-50%,-50%) scale(.43)!important;will-change:auto}.ni-showreel .ni-reel-title{display:none}}

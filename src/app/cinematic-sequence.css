@@ -1,15 +1,15 @@
 /* A vertical split: physical left travels up, physical right travels down. */
-.co-opening{position:fixed;inset:0;z-index:1500;overflow:hidden;isolation:isolate;color:#f4f0e9;animation:co-opening-failsafe .25s 3.8s forwards;font-family:'Noto Sans Arabic',Tahoma,sans-serif}
-.co-opening-panel{position:absolute;top:0;width:50%;height:100%;overflow:hidden;background:#000;will-change:transform}
+.co-opening{position:fixed;inset:0;z-index:1500;overflow:hidden;isolation:isolate;color:var(--color-paper);animation:co-opening-failsafe .25s 3.8s forwards;font-family:var(--font-arabic)}
+.co-opening-panel{position:absolute;top:0;width:50%;height:100%;overflow:hidden;background:var(--color-black);will-change:transform}
 .co-opening-left{left:0}
 .co-opening-right{right:0}
 .co-opening-panel-content{position:absolute;top:0;width:100vw;height:100%;display:grid;place-items:center}
 .co-opening-left .co-opening-panel-content{left:0}
 .co-opening-right .co-opening-panel-content{right:0}
-.co-opening-mark{font-size:clamp(80px,15vw,220px);font-weight:750;line-height:1.4;filter:blur(22px);opacity:0;white-space:nowrap;letter-spacing:normal}
-.co-opening-signature{position:absolute;bottom:6vh;left:50%;transform:translateX(-50%);font-size:24px;line-height:1.4;font-weight:650;letter-spacing:normal}
-.co-opening-seam{position:absolute;top:0;bottom:0;left:50%;width:1px;background:#ffffff1c;opacity:0;pointer-events:none}
-.co-opening>button{position:absolute;bottom:25px;left:var(--ni-gutter,24px);z-index:2;font-size:14px;line-height:1.6;color:#b7adbf;padding:10px}
-.co-opening>button:hover{color:#fff}
+.co-opening-mark{font-size:var(--text-094);font-weight:var(--weight-750);line-height:var(--leading-1p4);filter:blur(22px);opacity:0;white-space:nowrap;letter-spacing:normal}
+.co-opening-signature{position:absolute;bottom:var(--space-6vh);left:var(--space-50percent);transform:translateX(-50%);font-size:var(--text-24px);line-height:var(--leading-1p4);font-weight:var(--weight-650);letter-spacing:normal}
+.co-opening-seam{position:absolute;top:0;bottom:0;left:var(--space-50percent);width:1px;background:color-mix(in srgb, var(--color-white) 10.980392%, transparent);opacity:0;pointer-events:none}
+.co-opening>button{position:absolute;bottom:var(--space-25px);left:var(--ni-gutter,24px);z-index:2;font-size:var(--text-14px);line-height:var(--leading-1p6);color:var(--color-tone-b7adbf);padding:var(--space-10px)}
+.co-opening>button:hover{color:var(--color-white)}
 @keyframes co-opening-failsafe{to{opacity:0;visibility:hidden;pointer-events:none}}
 @media(prefers-reduced-motion:reduce){.co-opening{display:none!important}}
