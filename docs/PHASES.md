@@ -9,6 +9,6 @@ The website is Arabic-only. The approved order is frontend completion and approv
 
 Current implementation remains frontend-only and local. The user has asked that localhost not be opened or inspected; validation uses TypeScript, unit tests, media metadata, generated HTML and production builds.
 
-The brand palette is `#190C89`, `#15076E`, `#0B0915`, `#14299F`, `#7D41AF`. Main type is self-hosted Noto Sans Arabic; handwriting uses self-hosted Playpen Sans Arabic. The public email is `halla@majarrah.sa`.
+The brand palette is `#190C89`, `#15076E`, `#0B0915`, `#14299F`, `#7D41AF`. Main type is self-hosted Noto Sans Arabic; handwriting uses self-hosted Playpen Sans Arabic. The public email is `halla@majarah.sa`.
 
 See [Arabic public pages](ARABIC-PUBLIC-PAGES.md) for the delivered routes, interactions and validation boundary.

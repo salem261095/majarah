@@ -1,2 +1,2 @@
-import { MajarrahHome } from '@/components/majarrah-home';
-export default function HomePage(){return <MajarrahHome/>}
+import { MajarahHome } from '@/components/majarah-home';
+export default function HomePage(){return <MajarahHome/>}

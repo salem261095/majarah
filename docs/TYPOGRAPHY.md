@@ -25,7 +25,7 @@ The oversized brand signature is intentionally outside this scale. Wordmarks res
 
 ## Chapter structure
 
-The reusable `SectionHeading` in `src/components/majarrah-home.tsx` renders a right-hand numbered index and short description, then a two-thirds title column. It is used for the introduction, services, portfolio, showreel introduction, process, and contact. On phones the index, copy, and title stack in reading order. The same type roles continue through the smaller work list, footer, dialogs, and form.
+The reusable `SectionHeading` in `src/components/majarah-home.tsx` renders a right-hand numbered index and short description, then a two-thirds title column. It is used for the introduction, services, portfolio, showreel introduction, process, and contact. On phones the index, copy, and title stack in reading order. The same type roles continue through the smaller work list, footer, dialogs, and form.
 
 Services retain a subordinate sticky index below the full-width chapter header. Process stages form a connected grid: four columns on desktop, two on tablet, one on phones. Video playback behavior is unchanged.
 

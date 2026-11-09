@@ -28,7 +28,7 @@ Posters render before films. Portfolio cards mount silent video previews on hove
 - Shared CSS role tokens and Tailwind utilities, without preflight. New page styles are scoped to the inner-page classes; homepage composition is retained.
 - Arabic metadata, breadcrumbs, active navigation, semantic headings, labels, focus states, native FAQ disclosures and skip link.
 - Arabic only, permanently. No second-language version is planned. No admin, database, CMS, form storage, automated messaging or publishing added.
-- Contact prepares a validated local brief. The user explicitly opens their own mail application to send it to `halla@majarrah.sa`.
+- Contact prepares a validated local brief. The user explicitly opens their own mail application to send it to `halla@majarah.sa`.
 
 ## Verification
 

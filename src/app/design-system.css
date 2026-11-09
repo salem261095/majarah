@@ -15,22 +15,24 @@
   --color-brand-purple: #7d41af;
   --color-brand-deep: #15076e;
   --color-brand-blue: #14299f;
-  --font-arabic: 'Noto Sans Arabic',Tahoma,sans-serif;
-  --font-handwritten: 'Playpen Sans Arabic',cursive;
+  --font-arabic: 'Noto Sans Arabic', Tahoma, sans-serif;
+  --font-handwritten: 'Playpen Sans Arabic', cursive;
 }
 
 :root {
   /* Short UI transitions shared by buttons and playback controls. */
   --motion-short: 200ms;
+  --color-selection: var(--color-brand-purple);
   --cursor-star-size: 32px;
+  --project-dialog-portrait-height: 65svh;
   --cursor-color-dark: var(--color-white);
   --cursor-color-light: var(--color-brand-purple);
   --cursor-native-dark: url('/brand-cursor-light.svg') 16 16;
   --cursor-native-light: url('/brand-cursor.svg') 16 16;
   --leading-1: 1;
   --color-surface-panel: #12101d;
-  --font-latin: 'DM Sans',Arial,sans-serif;
-  --font-label: Arial,sans-serif;
+  --font-latin: 'DM Sans', Arial, sans-serif;
+  --font-label: Arial, sans-serif;
   --font-mono: monospace;
   /* Supporting tones preserve the approved existing artwork and interface. */
   --color-paper: #f4f0e9;
@@ -247,10 +249,10 @@
   --weight-650: 650;
   --weight-850: 850;
   /* Typography: sizes */
-  --text-001: clamp(54px,7.4vw,118px);
-  --text-002: clamp(36px,4.4vw,68px);
+  --text-001: clamp(54px, 7.4vw, 118px);
+  --text-002: clamp(36px, 4.4vw, 68px);
   --text-25px: 25px;
-  --text-004: clamp(48px,6.5vw,102px);
+  --text-004: clamp(48px, 6.5vw, 102px);
   --text-11px: 11px;
   --text-22px: 22px;
   --text-10px: 10px;
@@ -259,7 +261,7 @@
   --text-8px: 8px;
   --text-45px: 45px;
   --text-9px: 9px;
-  --text-013: clamp(75px,8.9vw,140px);
+  --text-013: clamp(75px, 8.9vw, 140px);
   --text-13px: 13px;
   --text-16px: 16px;
   --text-24px: 24px;
@@ -272,79 +274,79 @@
   --text-15px: 15px;
   --text-38px: 38px;
   --text-20px: 20px;
-  --text-027: clamp(48px,5.6vw,80px);
-  --text-028: clamp(63px,7.3vw,110px);
+  --text-027: clamp(48px, 5.6vw, 80px);
+  --text-028: clamp(63px, 7.3vw, 110px);
   --text-90px: 90px;
   --text-55px: 55px;
   --text-26px: 26px;
   --text-7px: 7px;
-  --text-034: clamp(59px,12vw,85px);
+  --text-034: clamp(59px, 12vw, 85px);
   --text-30px: 30px;
   --text-21px: 21px;
   --text-23px: 23px;
   --text-52px: 52px;
   --text-27px: 27px;
   --text-29px: 29px;
-  --text-043: clamp(55px,11vw,80px);
-  --text-047: clamp(43px,5vw,80px);
-  --text-048: clamp(28px,3.5vw,54px);
-  --text-050: clamp(80px,9vw,145px);
+  --text-043: clamp(55px, 11vw, 80px);
+  --text-047: clamp(43px, 5vw, 80px);
+  --text-048: clamp(28px, 3.5vw, 54px);
+  --text-050: clamp(80px, 9vw, 145px);
   --text-8p5vw: 8.5vw;
   --text-28px: 28px;
-  --text-053: clamp(45px,5vw,80px);
+  --text-053: clamp(45px, 5vw, 80px);
   --text-80px: 80px;
-  --text-056: clamp(150px,26vw,450px);
-  --text-058: clamp(30px,4.5vw,65px);
+  --text-056: clamp(150px, 26vw, 450px);
+  --text-058: clamp(30px, 4.5vw, 65px);
   --text-48px: 48px;
-  --text-064: clamp(52px,13vw,85px);
+  --text-064: clamp(52px, 13vw, 85px);
   --text-10vw: 10vw;
   --text-43px: 43px;
   --text-30vw: 30vw;
   --text-40px: 40px;
-  --text-role-display-mobile: clamp(48px,11vw,76px);
-  --text-role-heading-mobile: clamp(32px,7.8vw,51px);
+  --text-role-display-mobile: clamp(48px, 11vw, 76px);
+  --text-role-heading-mobile: clamp(32px, 7.8vw, 51px);
   --text-19px: 19px;
-  --text-094: clamp(80px,15vw,220px);
-  --text-099: clamp(48px,6.6vw,106px);
-  --text-100: clamp(35px,4.8vw,76px);
-  --text-103: clamp(52px,9vw,145px);
+  --text-094: clamp(80px, 15vw, 220px);
+  --text-099: clamp(48px, 6.6vw, 106px);
+  --text-100: clamp(35px, 4.8vw, 76px);
+  --text-103: clamp(52px, 9vw, 145px);
   --text-1p6vw: 1.6vw;
-  --text-105: clamp(30px,5vw,80px);
-  --text-106: clamp(40px,10.5vw,70px);
-  --text-107: clamp(30px,8vw,50px);
-  --text-110: clamp(27px,8vw,45px);
-  --text-role-meta: clamp(.75rem,.71rem + .16vw,.875rem);
-  --text-role-label: clamp(.875rem,.83rem + .14vw,1rem);
-  --text-role-body: clamp(1rem,.94rem + .2vw,1.125rem);
-  --text-role-lead: clamp(1.125rem,1rem + .4vw,1.5rem);
-  --text-role-title: clamp(1.5rem,1.15rem + 1.05vw,2.375rem);
-  --text-role-section: clamp(2.25rem,1.5rem + 3.2vw,5rem);
-  --text-role-handwritten: clamp(1.75rem,1rem + 2.4vw,4rem);
-  --text-118: clamp(3rem,7.8vw,8.5rem);
-  --text-119: clamp(20px,1.65vw,28px);
-  --text-120: clamp(1.5rem,1rem + 2.4vw,4rem);
-  --text-role-section-mobile: clamp(2.25rem,1.2rem + 5vw,3.5rem);
-  --text-role-title-mobile: clamp(1.5rem,1.1rem + 1.7vw,2rem);
+  --text-105: clamp(30px, 5vw, 80px);
+  --text-106: clamp(40px, 10.5vw, 70px);
+  --text-107: clamp(30px, 8vw, 50px);
+  --text-110: clamp(27px, 8vw, 45px);
+  --text-role-meta: clamp(.75rem, .71rem + .16vw, .875rem);
+  --text-role-label: clamp(.875rem, .83rem + .14vw, 1rem);
+  --text-role-body: clamp(1rem, .94rem + .2vw, 1.125rem);
+  --text-role-lead: clamp(1.125rem, 1rem + .4vw, 1.5rem);
+  --text-role-title: clamp(1.5rem, 1.15rem + 1.05vw, 2.375rem);
+  --text-role-section: clamp(2.25rem, 1.5rem + 3.2vw, 5rem);
+  --text-role-handwritten: clamp(1.75rem, 1rem + 2.4vw, 4rem);
+  --text-118: clamp(3rem, 7.8vw, 8.5rem);
+  --text-119: clamp(20px, 1.65vw, 28px);
+  --text-120: clamp(1.5rem, 1rem + 2.4vw, 4rem);
+  --text-role-section-mobile: clamp(2.25rem, 1.2rem + 5vw, 3.5rem);
+  --text-role-title-mobile: clamp(1.5rem, 1.1rem + 1.7vw, 2rem);
   --text-1rem: 1rem;
   --text-1p125rem: 1.125rem;
-  --text-role-handwritten-mobile: clamp(1.5rem,.9rem + 3vw,2.25rem);
-  --text-126: clamp(1.4rem,.9rem + 2.4vw,2.5rem);
-  --text-127: clamp(26px,3.4vw,56px);
-  --text-128: clamp(22px,5.8vw,34px);
-  --text-129: clamp(20px,3vw,40px);
-  --text-130: clamp(28px,1.1rem + 1.9vw,52px);
+  --text-role-handwritten-mobile: clamp(1.5rem, .9rem + 3vw, 2.25rem);
+  --text-126: clamp(1.4rem, .9rem + 2.4vw, 2.5rem);
+  --text-127: clamp(26px, 3.4vw, 56px);
+  --text-128: clamp(22px, 5.8vw, 34px);
+  --text-129: clamp(20px, 3vw, 40px);
+  --text-130: clamp(28px, 1.1rem + 1.9vw, 52px);
   --text-1p1em: 1.1em;
-  --text-132: clamp(48px,6.8vw,116px);
+  --text-132: clamp(48px, 6.8vw, 116px);
   --text-50px: 50px;
-  --text-134: clamp(32px,3.5vw,56px);
+  --text-134: clamp(32px, 3.5vw, 56px);
   --text-14vw: 14vw;
   --text-210px: 210px;
-  --text-137: clamp(40px,7.5vw,120px);
-  --text-138: clamp(24px,3vw,46px);
-  --text-139: clamp(36px,4vw,64px);
+  --text-137: clamp(40px, 7.5vw, 120px);
+  --text-138: clamp(24px, 3vw, 46px);
+  --text-139: clamp(36px, 4vw, 64px);
   --text-1p8vw: 1.8vw;
-  --text-141: clamp(48px,6.3vw,86px);
-  --text-142: clamp(42px,10.5vw,72px);
+  --text-141: clamp(48px, 6.3vw, 86px);
+  --text-142: clamp(42px, 10.5vw, 72px);
   --text-85px: 85px;
   /* Typography: line heights */
   --leading-1p04: 1.04;
@@ -427,7 +429,7 @@
   --line: color-mix(in srgb, var(--color-white) 12.941176%, transparent);
   --violet: var(--color-brand-violet);
   --accent: var(--color-accent-light);
-  --pad: clamp(var(--space-22px),var(--space-5p2vw),var(--space-100px));
+  --pad: clamp(var(--space-22px), var(--space-5p2vw), var(--space-100px));
   --font: var(--font-latin);
 }
 
@@ -475,7 +477,7 @@ html[lang=ar] {
   --ni-dark: var(--color-brand-midnight);
   --ni-accent: var(--color-brand-purple);
   --ni-rule: color-mix(in srgb, var(--color-white) 10.980392%, transparent);
-  --ni-space: clamp(var(--space-80px),var(--space-10vw),var(--space-160px));
+  --ni-space: clamp(var(--space-80px), var(--space-10vw), var(--space-160px));
   --ni-heading: var(--text-099);
 }
 
@@ -564,7 +566,7 @@ html[lang=ar] {
 
 .ni-clients {
   --client-row-height: 180px;
-  --client-cell-width: clamp(122px,10vw,140px);
+  --client-cell-width: clamp(122px, 10vw, 140px);
   --client-logo-width: 110px;
   --client-logo-height: 63px;
   --client-static-cell-height: 110px;
@@ -590,13 +592,35 @@ html[lang=ar] {
   --process-sticky-top: var(--hero-header-height);
   --process-mobile-step-width: calc(100vw - 2 * var(--ni-gutter));
 }
+
 @media(max-width:760px) {
-  .ni-process-timeline { --process-scroll-distance: 150svh; }
+  .ni-process-timeline {
+    --process-scroll-distance: 150svh;
+  }
 }
 
 /* Static native cursors also keep contrast when reduced motion disables the animated layer. */
-.ni-home { --native-star-cursor: var(--cursor-native-dark); }
-.ni-light,.ip-light { --native-star-cursor: var(--cursor-native-light); }
-.ip-dark,.ip-violet,.rh-header,.ni-footer,.ni-dialog,.ni-process-timeline {
+.ni-home {
   --native-star-cursor: var(--cursor-native-dark);
 }
+
+.ni-light,
+.ip-light {
+  --native-star-cursor: var(--cursor-native-light);
+}
+
+.ip-dark,
+.ip-violet,
+.rh-header,
+.ni-footer,
+.ni-dialog,
+.ni-process-timeline {
+  --native-star-cursor: var(--cursor-native-dark);
+}
+/* Live selected-work backgrounds: enough diffusion for text, with visible moving detail. */
+#hd-work {
+  --work-ambient-blur: 12px;
+  --work-ambient-opacity: .75;
+  --work-ambient-brightness: .74;
+}
+@media(max-width:760px) { #hd-work { --work-ambient-blur: 8px; } }

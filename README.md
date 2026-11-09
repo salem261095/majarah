@@ -1,4 +1,4 @@
-# مجرة · Majarra
+# مجرّة · Majarra
 
 Arabic-only agency website. Current scope: Arabic frontend; backend remains a later approval stage. There is no second-language version or language switch.
 
@@ -25,7 +25,7 @@ The approved reference-based content sections remain. The previous compact dark 
 
 GSAP + ScrollTrigger handle staged reveals and the showreel-to-mosaic transition. CSS handles simple hover effects. Tailwind CSS and shared CSS variables provide the responsive design system.
 
-Local project images and silent video copies are used; originals remain untouched. New supplied landscape clips are shown as visual-library scenes. Forms prepare a local summary for an explicit mail handoff to `halla@majarrah.sa`; no backend submission or storage is enabled.
+Local project images and silent video copies are used; originals remain untouched. New supplied landscape clips are shown as visual-library scenes. Forms prepare a local summary for an explicit mail handoff to `halla@majarah.sa`; no backend submission or storage is enabled.
 
 The logo is typographic until official assets arrive. Noto Sans Arabic is self-hosted; Playpen Sans Arabic supplies the handwritten contrast (self-hosted with its SIL OFL license). Arabic wordmarks fit their available width by changing font size, without scaling or stretching glyphs.
 

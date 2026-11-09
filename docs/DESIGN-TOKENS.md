@@ -28,3 +28,21 @@ The pointer cursor is a transparent star that transitions to white on dark secti
 
 
 Adaptive cursor contrast is resolved from the nearest section/header/footer/dialog surface and its transparent ancestors, with results cached per surface. Pointer and scroll events share one scheduled contrast check, so scrolling beneath a stationary cursor also updates the color. The main star uses the centralized `--cursor-color-dark` and `--cursor-color-light` values and `--motion-short` transition. Burst particles keep their individual brand colors. Native reduced-motion fallbacks have corresponding white/purple star assets. A future media surface can explicitly select a tone with `data-cursor-theme="dark"` or `data-cursor-theme="light"`.
+
+
+The homepage component is `MajarahHome` in `src/components/majarah-home.tsx`; React component JSX must retain its capitalized name. Root `RouteScrollReset` opens new routes at the top, preserves explicit section fragments, and prevents native history restoration from keeping a previous footer offset. Dialog opener focus is restored with `preventScroll`.
+
+Global hero/footer pause buttons and the duplicate manual-video pause overlay have been removed. Reduced-motion preferences, viewport-aware playback coordination and native manual-video controls remain. Selected-work ambient layers now use live videos in the same playback group as their covers, clipped to their cards. Their lighter diffusion uses `--work-ambient-blur` (12px desktop, 8px mobile), `--work-ambient-opacity` and `--work-ambient-brightness` in the central token file.
+
+
+The homepage and contact-page inquiry forms now share `useInquirySubmission`: normal submit copy, validation, a brief sending state, and the requested simulated success confirmation. The form resets after success. This is deliberately a frontend simulation; it does not send, copy or persist an inquiry. The former copy-summary/email-app instructions and manual-copy fallbacks are removed from both forms.
+
+
+Arabic brand spelling is consistently «مجرّة», and the former studio navigation/section label is «من مجرّة». Selected-work metadata now shows «العميل» with the frontend placeholder clients stored in `selectedWork`; matching project detail pages reuse those same names. These names are fictional review content supplied under the user's mock-data instruction.
+
+Marketing service rows use ScrollTrigger to activate a background while crossing the reading line, with the same `--color-selection` purple used by text selection and white supporting text for contrast. Keyboard focus receives the same highlight. Expanding a row refreshes the trigger positions.
+
+The showreel retains its cinematic zoom-out but finishes at a scale calculated from actual grid/stage dimensions and page gutters. Every tile is a 16:9 landscape frame; footage uses contain sizing to avoid cutting off the source, with the existing soft backdrop behind portrait clips. Reduced motion presents the complete fitted composition without a zoom sequence.
+
+
+Selected work now has separate mobile and desktop film mappings in `src/lib/home-media.ts`. Mobile uses dedicated 9:16 previews while desktop retains landscape films. Covers, live ambient backgrounds and the opened film all use the same selected orientation. Before viewport detection, responsive poster markup renders without mounting either video; afterward only the matched film mounts. Mobile foregrounds and modal playback use contain sizing to preserve the complete portrait image. All existing video asset paths and migration destinations point to the user's `videos/portrait` and `videos/landscape` folders.

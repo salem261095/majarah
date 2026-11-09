@@ -39,3 +39,13 @@
  .ni-marketing-bottom>a{align-self:start;gap:var(--space-45px)}
 }
 @media(prefers-reduced-motion:reduce){.ni-marketing-row[open] .ni-marketing-detail{animation:none}.ni-marketing-toggle>svg{transition:none}}
+
+/* The active scroll row uses the exact same brand accent as text selection. */
+.ni-marketing-row{transition:background-color .3s ease}
+.ni-marketing-row.is-scroll-active,.ni-marketing-row:focus-within{background:var(--color-selection)}
+.ni-home .ni-marketing-row.is-scroll-active summary>p,.ni-home .ni-marketing-row:focus-within summary>p,
+.ni-marketing-row.is-scroll-active .ni-marketing-number,.ni-marketing-row:focus-within .ni-marketing-number,
+.ni-marketing-row.is-scroll-active .ni-marketing-detail>span,.ni-marketing-row:focus-within .ni-marketing-detail>span,
+.ni-marketing-row.is-scroll-active .ni-marketing-detail li,.ni-marketing-row:focus-within .ni-marketing-detail li{color:var(--color-white)}
+.ni-marketing-row.is-scroll-active>summary:hover h3,.ni-marketing-row:focus-within>summary:hover h3{color:var(--color-white)}
+.ni-marketing-row.is-scroll-active .ni-marketing-toggle,.ni-marketing-row:focus-within .ni-marketing-toggle{border-color:color-mix(in srgb,var(--color-white) 60%,transparent)}

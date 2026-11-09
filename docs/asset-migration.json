@@ -11,7 +11,7 @@
     },
     {
       "from": "public/media/editorial/beads-detail.mp4",
-      "to": "public/assets/videos/prayer-beads-closeup.mp4",
+      "to": "public/assets/videos/portrait/prayer-beads-closeup.mp4",
       "role": "video",
       "logicalId": "editorial/beads-detail",
       "bytes": 282309,
@@ -37,7 +37,7 @@
     },
     {
       "from": "public/media/editorial/burger-craft.mp4",
-      "to": "public/assets/videos/burger-preparation.mp4",
+      "to": "public/assets/videos/portrait/burger-preparation.mp4",
       "role": "video",
       "logicalId": "editorial/burger-craft",
       "bytes": 174324,
@@ -63,7 +63,7 @@
     },
     {
       "from": "public/media/editorial/cafe-conversation.mp4",
-      "to": "public/assets/videos/cafe-hospitality-conversation.mp4",
+      "to": "public/assets/videos/landscape/cafe-hospitality-conversation.mp4",
       "role": "video",
       "logicalId": "editorial/cafe-conversation",
       "bytes": 259084,
@@ -89,7 +89,7 @@
     },
     {
       "from": "public/media/editorial/hospitality-arrival.mp4",
-      "to": "public/assets/videos/hospitality-entrance.mp4",
+      "to": "public/assets/videos/portrait/hospitality-entrance.mp4",
       "role": "video",
       "logicalId": "editorial/hospitality-arrival",
       "bytes": 359462,
@@ -115,7 +115,7 @@
     },
     {
       "from": "public/media/editorial/invitation-detail.mp4",
-      "to": "public/assets/videos/invitation-paper-details.mp4",
+      "to": "public/assets/videos/landscape/invitation-paper-details.mp4",
       "role": "video",
       "logicalId": "editorial/invitation-detail",
       "bytes": 238533,
@@ -141,7 +141,7 @@
     },
     {
       "from": "public/media/editorial/lantern-story.mp4",
-      "to": "public/assets/videos/ramadan-lantern.mp4",
+      "to": "public/assets/videos/landscape/ramadan-lantern.mp4",
       "role": "video",
       "logicalId": "editorial/lantern-story",
       "bytes": 149853,
@@ -167,7 +167,7 @@
     },
     {
       "from": "public/media/editorial/monochrome-craft.mp4",
-      "to": "public/assets/videos/cinematic-hands-monochrome.mp4",
+      "to": "public/assets/videos/landscape/cinematic-hands-monochrome.mp4",
       "role": "video",
       "logicalId": "editorial/monochrome-craft",
       "bytes": 316393,
@@ -193,7 +193,7 @@
     },
     {
       "from": "public/media/editorial/neon-fries.mp4",
-      "to": "public/assets/videos/fries-neon-sign.mp4",
+      "to": "public/assets/videos/portrait/fries-neon-sign.mp4",
       "role": "video",
       "logicalId": "editorial/neon-fries",
       "bytes": 291928,
@@ -219,7 +219,7 @@
     },
     {
       "from": "public/media/editorial/pasta-craft.mp4",
-      "to": "public/assets/videos/pasta-preparation.mp4",
+      "to": "public/assets/videos/portrait/pasta-preparation.mp4",
       "role": "video",
       "logicalId": "editorial/pasta-craft",
       "bytes": 887608,
@@ -245,7 +245,7 @@
     },
     {
       "from": "public/media/editorial/saffron-table.mp4",
-      "to": "public/assets/videos/saffron-rice-table.mp4",
+      "to": "public/assets/videos/landscape/saffron-rice-table.mp4",
       "role": "video",
       "logicalId": "editorial/saffron-table",
       "bytes": 549019,
@@ -271,7 +271,7 @@
     },
     {
       "from": "public/media/editorial/training-moment.mp4",
-      "to": "public/assets/videos/fitness-training.mp4",
+      "to": "public/assets/videos/portrait/fitness-training.mp4",
       "role": "video",
       "logicalId": "editorial/training-moment",
       "bytes": 369634,
@@ -297,7 +297,7 @@
     },
     {
       "from": "public/media/showcase/falcon-heritage.mp4",
-      "to": "public/assets/videos/saudi-falcon-heritage.mp4",
+      "to": "public/assets/videos/landscape/saudi-falcon-heritage.mp4",
       "role": "video",
       "logicalId": "showcase/falcon-heritage",
       "bytes": 173402,
@@ -323,7 +323,7 @@
     },
     {
       "from": "public/media/showcase/gaming-session.mp4",
-      "to": "public/assets/videos/gaming-session.mp4",
+      "to": "public/assets/videos/landscape/gaming-session.mp4",
       "role": "video",
       "logicalId": "showcase/gaming-session",
       "bytes": 189494,
@@ -349,7 +349,7 @@
     },
     {
       "from": "public/media/showcase/modern-workspace.mp4",
-      "to": "public/assets/videos/modern-office-interior.mp4",
+      "to": "public/assets/videos/landscape/modern-office-interior.mp4",
       "role": "video",
       "logicalId": "showcase/modern-workspace",
       "bytes": 295956,
@@ -375,7 +375,7 @@
     },
     {
       "from": "public/media/showcase/samosa-detail.mp4",
-      "to": "public/assets/videos/samosa-preparation.mp4",
+      "to": "public/assets/videos/landscape/samosa-preparation.mp4",
       "role": "video",
       "logicalId": "showcase/samosa-detail",
       "bytes": 236489,
@@ -401,7 +401,7 @@
     },
     {
       "from": "public/media/showcase/shawarma-craft.mp4",
-      "to": "public/assets/videos/shawarma-roasting.mp4",
+      "to": "public/assets/videos/landscape/shawarma-roasting.mp4",
       "role": "video",
       "logicalId": "showcase/shawarma-craft",
       "bytes": 642262,

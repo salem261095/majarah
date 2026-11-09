@@ -2,69 +2,75 @@
 export const videoAssets = {
   "editorial": {
     "beads-detail": {
-      "src": "/assets/videos/prayer-beads-closeup.mp4",
+      "src": "/assets/videos/portrait/prayer-beads-closeup.mp4",
       "poster": "/assets/posters/prayer-beads-closeup.jpg"
     },
     "burger-craft": {
-      "src": "/assets/videos/burger-preparation.mp4",
+      "src": "/assets/videos/portrait/burger-preparation.mp4",
       "poster": "/assets/posters/burger-preparation.jpg"
     },
     "cafe-conversation": {
-      "src": "/assets/videos/cafe-hospitality-conversation.mp4",
+      "src": "/assets/videos/landscape/cafe-hospitality-conversation.mp4",
       "poster": "/assets/posters/cafe-hospitality-conversation.jpg"
     },
     "hospitality-arrival": {
-      "src": "/assets/videos/hospitality-entrance.mp4",
+      "src": "/assets/videos/portrait/hospitality-entrance.mp4",
       "poster": "/assets/posters/hospitality-entrance.jpg"
     },
     "invitation-detail": {
-      "src": "/assets/videos/invitation-paper-details.mp4",
+      "src": "/assets/videos/landscape/invitation-paper-details.mp4",
       "poster": "/assets/posters/invitation-paper-details.jpg"
     },
     "lantern-story": {
-      "src": "/assets/videos/ramadan-lantern.mp4",
+      "src": "/assets/videos/landscape/ramadan-lantern.mp4",
       "poster": "/assets/posters/ramadan-lantern.jpg"
     },
     "monochrome-craft": {
-      "src": "/assets/videos/cinematic-hands-monochrome.mp4",
+      "src": "/assets/videos/landscape/cinematic-hands-monochrome.mp4",
       "poster": "/assets/posters/cinematic-hands-monochrome.jpg"
     },
     "neon-fries": {
-      "src": "/assets/videos/fries-neon-sign.mp4",
+      "src": "/assets/videos/portrait/fries-neon-sign.mp4",
       "poster": "/assets/posters/fries-neon-sign.jpg"
     },
     "pasta-craft": {
-      "src": "/assets/videos/pasta-preparation.mp4",
+      "src": "/assets/videos/portrait/pasta-preparation.mp4",
       "poster": "/assets/posters/pasta-preparation.jpg"
     },
     "saffron-table": {
-      "src": "/assets/videos/saffron-rice-table.mp4",
+      "src": "/assets/videos/landscape/saffron-rice-table.mp4",
       "poster": "/assets/posters/saffron-rice-table.jpg"
     },
     "training-moment": {
-      "src": "/assets/videos/fitness-training.mp4",
+      "src": "/assets/videos/portrait/fitness-training.mp4",
       "poster": "/assets/posters/fitness-training.jpg"
     }
   },
+  "portrait": {
+    "anah-study": {"src":"/assets/videos/portrait/anah-study-preview.mp4","poster":"/assets/posters/anah-study-portrait.jpg"},
+    "max-fitness": {"src":"/assets/videos/portrait/max-fitness-preview.mp4","poster":"/assets/posters/max-fitness-portrait.jpg"},
+    "buters-festival": {"src":"/assets/videos/portrait/buters-festival-preview.mp4","poster":"/assets/posters/buters-festival-portrait.jpg"},
+    "buters-outdoor": {"src":"/assets/videos/portrait/buters-outdoor-preview.mp4","poster":"/assets/posters/buters-outdoor-portrait.jpg"}
+  },
   "showcase": {
     "falcon-heritage": {
-      "src": "/assets/videos/saudi-falcon-heritage.mp4",
+      "src": "/assets/videos/landscape/saudi-falcon-heritage.mp4",
       "poster": "/assets/posters/saudi-falcon-heritage.jpg"
     },
     "gaming-session": {
-      "src": "/assets/videos/gaming-session.mp4",
+      "src": "/assets/videos/landscape/gaming-session.mp4",
       "poster": "/assets/posters/gaming-session.jpg"
     },
     "modern-workspace": {
-      "src": "/assets/videos/modern-office-interior.mp4",
+      "src": "/assets/videos/landscape/modern-office-interior.mp4",
       "poster": "/assets/posters/modern-office-interior.jpg"
     },
     "samosa-detail": {
-      "src": "/assets/videos/samosa-preparation.mp4",
+      "src": "/assets/videos/landscape/samosa-preparation.mp4",
       "poster": "/assets/posters/samosa-preparation.jpg"
     },
     "shawarma-craft": {
-      "src": "/assets/videos/shawarma-roasting.mp4",
+      "src": "/assets/videos/landscape/shawarma-roasting.mp4",
       "poster": "/assets/posters/shawarma-roasting.jpg"
     }
   }

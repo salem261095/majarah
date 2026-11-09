@@ -40,7 +40,7 @@ export function CinematicOpening({paused}:{paused:boolean}){
  },[paused]);
  if(done)return null;
  return <div ref={root} className="co-opening">
-  {(['left','right'] as const).map(side=><div key={side} className={`co-opening-panel co-opening-${side}`} aria-hidden="true"><div className="co-opening-panel-content"><span className="co-opening-mark">مجرة</span><span className="co-opening-signature">مجرة</span></div></div>)}
+  {(['left','right'] as const).map(side=><div key={side} className={`co-opening-panel co-opening-${side}`} aria-hidden="true"><div className="co-opening-panel-content"><span className="co-opening-mark">مجرّة</span><span className="co-opening-signature">مجرّة</span></div></div>)}
   <span className="co-opening-seam" aria-hidden="true"/>
   <button onClick={()=>finish.current()}>تخطّ المقدمة ↖</button>
  </div>;

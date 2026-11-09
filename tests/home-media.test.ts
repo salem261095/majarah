@@ -2,7 +2,7 @@ import { getVideoAsset } from '../src/lib/assets';
 import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
-import { selectedWork, creativeServiceMedia, heroFilms, reelTiles, type VideoDirectory } from '../src/lib/home-media';
+import { selectedWork, selectedWorkSource, creativeServiceMedia, heroFilms, reelTiles, type VideoDirectory } from '../src/lib/home-media';
 const publicAsset=(path:string)=>fileURLToPath(new URL(`../public${path}`,import.meta.url));
 function expectFilm(name:string,directory:VideoDirectory='editorial'){
  const film=getVideoAsset(name,directory);
@@ -22,5 +22,19 @@ describe('homepage media integrity',()=>{
  });
  it('provides all showreel mosaic films and posters',()=>{
   for(const tile of reelTiles)expectFilm(tile.name);
+ });
+});
+
+
+describe('viewport-specific selected work',()=>{
+ it('uses four different portrait films on mobile and retains landscape films on desktop',()=>{
+  const portraitNames=new Set<string>();
+  for(const project of selectedWork){
+   const desktop=selectedWorkSource(project,false),mobile=selectedWorkSource(project,true);
+   expect(desktop.media).toBe(project.media);expect(getVideoAsset(desktop.media,desktop.directory).src).toContain('/videos/landscape/');
+   expect(mobile.media).not.toBe(desktop.media);expect(getVideoAsset(mobile.media,mobile.directory).src).toContain('/videos/portrait/');
+   portraitNames.add(mobile.media);expectFilm(mobile.media,mobile.directory);
+  }
+  expect(portraitNames.size).toBe(4);
  });
 });

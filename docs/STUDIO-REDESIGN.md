@@ -1,6 +1,6 @@
 # Studio editorial spread
 
-The «الاستوديو» section is rebuilt as a dedicated `StudioSection` component. Its shared numbered eyebrow, heading scale, palette, natural Arabic typography, and RTL reading order remain consistent with the rest of the homepage.
+The «من مجرّة» section is rebuilt as a dedicated `StudioSection` component. Its shared numbered eyebrow, heading scale, palette, natural Arabic typography, and RTL reading order remain consistent with the rest of the homepage.
 
 The new body is a twelve-column spread: a dominant monochrome craft image spans seven columns on the right, an empty column creates separation, and a quiet four-column reading area sits on the left. That column contains a short lead, the existing studio description, two concise principles, and a small typographic signature. A fine rule closes the section with a handwritten line and a services link. On phones the figure, text, and closing line stack naturally.
 

@@ -41,7 +41,7 @@ Mapping:
 - P520706 → modern-workspace
 - P54092 → coffee-portrait
 
-The contact email remains `halla@majarrah.sa`. Forms remain frontend-only, with local summary preparation and an explicit email handoff. Everything stays silent.
+The contact email remains `halla@majarah.sa`. Forms remain frontend-only, with local summary preparation and an explicit email handoff. Everything stays silent.
 
 ## Verification limits
 

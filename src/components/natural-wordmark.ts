@@ -10,7 +10,7 @@ export function useNaturalWordmark(ref:RefObject<HTMLElement|null>,fitHeight=fal
    if(!alive||!node||!context)return;
    const style=getComputedStyle(node);
    context.font=`${style.fontWeight} 100px ${style.fontFamily}`;
-   const width=context.measureText('مجرة').width;
+   const width=context.measureText('مجرّة').width;
    if(width>0){const widthSize=node.clientWidth*.97/width*100;const heightSize=fitHeight&&node.parentElement?node.parentElement.clientHeight/1.12:Infinity;node.style.setProperty('--wordmark-size',`${Math.min(widthSize,heightSize)}px`)}
   }
   const observer=new ResizeObserver(fit);observer.observe(node);if(fitHeight&&node.parentElement)observer.observe(node.parentElement);fit();

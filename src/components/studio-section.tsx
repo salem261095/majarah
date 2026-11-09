@@ -27,7 +27,7 @@ export function StudioSection({paused}:{paused:boolean}){
  useEffect(()=>{pausedState.current=paused;sync.current()},[paused]);
  return <section id="hd-about" ref={root} className="ni-studio ni-grid ni-light" aria-labelledby="studio-title">
   <ClientLogosSection paused={paused}/>
-  <SectionHeading number="01" label="الاستوديو" title={<span id="studio-title"><ReadingLine>فكرٌ يرى أبعد.</ReadingLine><br/><ReadingLine>وحِرفةٌ تصنع الأثر.</ReadingLine></span>} description="نحن مجرة. نصل التفكير الاستراتيجي بالإنتاج الإبداعي، لنمنح العلامات حضورًا يشبهها." note="رؤية سعودية، وآفاق أبعد" animate={false} titleClassName="ni-studio-title"/>
+  <SectionHeading number="01" label="من مجرّة" title={<span id="studio-title"><ReadingLine>فكرٌ يرى أبعد.</ReadingLine><br/><ReadingLine>وحِرفةٌ تصنع الأثر.</ReadingLine></span>} description="نحن مجرّة. نصل التفكير الاستراتيجي بالإنتاج الإبداعي، لنمنح العلامات حضورًا يشبهها." note="رؤية سعودية، وآفاق أبعد" animate={false} titleClassName="ni-studio-title"/>
   <div className="ni-studio-closing"><p>الفكر والحِرفة، <span>في مدار واحد.</span></p><a href="#hd-services">اكتشف ما نصنع<ArrowUpLeft size={20}/></a></div>
  </section>;
 }
