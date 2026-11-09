@@ -1,0 +1,90 @@
+[
+  {
+    "name": "cafe-conversation",
+    "source": "public/assets/originals/videos/cafe-hospitality-conversation-original.mp4",
+    "start": 3,
+    "duration": 5,
+    "audio": false,
+    "originalSource": "public/canva-videos/79eb9de1393d60df72947d8096610c50.mp4"
+  },
+  {
+    "name": "saffron-table",
+    "source": "public/assets/originals/videos/saffron-rice-table-original.mp4",
+    "start": 2,
+    "duration": 5,
+    "audio": false,
+    "originalSource": "public/canva-videos/15639b8a689b40ec0de39c46448df11f.mp4"
+  },
+  {
+    "name": "pasta-craft",
+    "source": "public/assets/originals/videos/pasta-preparation-original.mp4",
+    "start": 4,
+    "duration": 5,
+    "audio": false,
+    "originalSource": "public/canva-videos/216215bba195a9b6bc66619dac0b5dec.mp4"
+  },
+  {
+    "name": "training-moment",
+    "source": "public/assets/originals/videos/fitness-training-original.mp4",
+    "start": 3,
+    "duration": 5,
+    "audio": false,
+    "originalSource": "public/canva-videos/6e4bda96d78f5c6cbd59f4bebfc93756.mp4"
+  },
+  {
+    "name": "beads-detail",
+    "source": "public/assets/originals/videos/prayer-beads-closeup-original.mp4",
+    "start": 2,
+    "duration": 5,
+    "audio": false,
+    "originalSource": "public/canva-videos/86ddfb8573e45a70029071e70217790d.mp4"
+  },
+  {
+    "name": "hospitality-arrival",
+    "source": "public/assets/originals/videos/hospitality-entrance-original.mp4",
+    "start": 3,
+    "duration": 5,
+    "audio": false,
+    "originalSource": "public/canva-videos/a06142280e8b767ab845732ca55df9b8.mp4"
+  },
+  {
+    "name": "monochrome-craft",
+    "source": "public/assets/originals/videos/cinematic-hands-monochrome-original.mp4",
+    "start": 5,
+    "duration": 5,
+    "audio": false,
+    "originalSource": "public/canva-videos/e150e667d03be8555a6d992ceee1ccc0.mp4"
+  },
+  {
+    "name": "lantern-story",
+    "source": "public/assets/originals/videos/ramadan-lantern-original.mp4",
+    "start": 0,
+    "duration": 5,
+    "audio": false,
+    "originalSource": "public/canva-videos/e339318c6552870137d89c1f70b8282d.mp4"
+  },
+  {
+    "name": "invitation-detail",
+    "source": "public/assets/originals/videos/invitation-paper-details-original.mp4",
+    "start": 0,
+    "duration": 5,
+    "audio": false,
+    "originalSource": "public/canva-videos/e6515b12f921385163d486b73b838412.mp4"
+  },
+  {
+    "name": "burger-craft",
+    "source": "public/assets/originals/videos/burger-preparation-original.mp4",
+    "start": 6,
+    "duration": 6,
+    "audio": false,
+    "originalSource": "public/canva-videos/0e34d9662053b1aa5673e7f8b4c74024.mp4"
+  },
+  {
+    "name": "neon-fries",
+    "source": "public/assets/originals/videos/fries-neon-sign-original.mp4",
+    "start": 3,
+    "duration": 6,
+    "audio": false,
+    "originalSource": "public/canva-videos/fe023bba8b6fa45bf8771c9fbc4a9185.mp4"
+  }
+]

@@ -1,0 +1,7 @@
+/* Native favicon cursor: exact pointer tracking, no extra animation loop or touch cursor. */
+@media(hover:hover) and (pointer:fine){
+ .ni-home,.ni-home *{cursor:url('/brand-cursor.svg') 16 16,auto}
+ .ni-home :is(a,button,select,summary,[role=button]){cursor:url('/brand-cursor.svg') 16 16,pointer}
+ .ni-home :is(input,textarea,[contenteditable=true]){cursor:text}
+ .ni-home :is(button:disabled,select:disabled){cursor:not-allowed}
+}

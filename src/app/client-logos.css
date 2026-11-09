@@ -1,0 +1,14 @@
+/* One continuous monochrome logo band at the top of the studio section. */
+.ni-clients{padding:0 var(--ni-gutter);border-block:1px solid #0b09151c;overflow:hidden}
+.ni-client-window{position:relative;height:180px;overflow:hidden;direction:ltr;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.ni-client-track{position:absolute;left:0;top:0;display:flex;width:max-content;height:100%;direction:ltr;will-change:transform;mix-blend-mode:multiply}
+.ni-client-set{display:flex;flex:none;height:100%;direction:ltr}
+.ni-client-cell{width:clamp(156px,13vw,184px);height:100%;display:grid;place-items:center;flex:none;padding:6px;mix-blend-mode:multiply}
+.ni-client-cell>img{display:block;width:145px;max-width:100%;height:83px;object-fit:contain;filter:grayscale(1) invert(1) blur(var(--client-blur,0px));opacity:var(--client-opacity,.78);transform:scale(var(--client-scale,1));mix-blend-mode:multiply}
+.ni-client-cell:hover>img{filter:grayscale(1) invert(1);opacity:.86;transform:none}
+.ni-home .ni-studio{padding-top:0}
+.ni-studio>.ni-clients{margin-inline:calc(-1 * var(--ni-gutter));margin-bottom:var(--ni-space)}
+.ni-footer-motion{display:inline-flex;align-items:center;gap:10px;font-size:var(--type-meta);line-height:1.6;min-height:36px;padding:0;color:inherit}
+.ni-footer-motion:hover{color:#b384d5}
+@media(max-width:760px){.ni-client-window{height:130px}.ni-client-cell{width:140px;padding:7px}.ni-client-cell>img{width:125px;height:70px}.ni-studio>.ni-clients{margin-bottom:60px}.ni-footer-bottom>span:nth-of-type(3){display:none}}
+@media(prefers-reduced-motion:reduce){.ni-client-window{height:auto;mask-image:none;overflow:visible}.ni-client-track{position:relative;transform:none!important;will-change:auto;width:100%;height:auto}.ni-client-set{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));height:auto;width:100%}.ni-client-set:nth-child(2){display:none}.ni-client-cell{width:auto;height:110px;padding:18px}.ni-client-cell>img{filter:grayscale(1) invert(1);opacity:.86;transform:none}}

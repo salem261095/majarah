@@ -1,0 +1,7 @@
+import { PageHero } from './page-elements';
+import { ContactInquiry } from './contact-inquiry';
+import { SectionStamp } from '../section-heading';
+import { homeFaqs } from '@/lib/home-content';
+export function ContactContent({service,project}:{service?:string;project?:string}){
+ return <><PageHero number="04" label="التواصل" title={<>حكايتك القادمة،<br/>تبدأ هنا.</>} description="فكرة واضحة أو سؤال ما زال يتشكّل. أخبرنا بما تطمح إليه، ولنكتشف الخطوة المناسبة معًا." note="يسعدنا أن نبدأ الحوار." tone="light"/><section className="ip-contact-layout ni-grid ip-light"><aside><SectionStamp number="01">التواصل المباشر</SectionStamp><a className="ip-contact-email" href="mailto:halla@majarrah.sa" dir="ltr">halla@majarrah.sa</a><p>المملكة العربية السعودية</p><div className="ip-contact-note"><span aria-hidden="true">✳</span><h2>ابدأ بالهدف.<br/>واترك الباقي للحوار.</h2><p>وصف الفكرة، والجمهور، والقنوات، والموعد المقترح يساعدنا على فهم مشروعك من البداية.</p></div></aside><ContactInquiry key={`${service||''}/${project||''}`} initialService={service} initialProject={project}/></section><section className="ip-faq ni-grid"><div><SectionStamp number="02">قبل أن نتحدث</SectionStamp><h2>بداية أوضح.</h2></div><div>{homeFaqs.slice(0,3).map(([question,answer])=><details key={question}><summary>{question}<span aria-hidden="true">+</span></summary><p>{answer}</p></details>)}</div></section></>;
+}

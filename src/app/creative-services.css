@@ -1,0 +1,15 @@
+/* Creative production uses a solid brand violet and paired moving media. */
+.ni-home .ni-services{position:relative;isolation:isolate;background:#15076e}
+.ni-services .ni-section-index>p,.ni-services .ni-service-details>p{color:#ded5e6}
+.ni-services .ni-section-note,.ni-services .ni-rail-label,.ni-services .ni-service-panel-top{color:#cfc0dc}
+.ni-services .ni-stamp small,.ni-services .ni-service-number,.ni-services .ni-service-heading>nav>a>span:first-child{color:#e6d5f2}
+.ni-services .ni-service-panel,.ni-services .ni-service-heading>nav>a{border-color:#ffffff35}
+.ni-services .ni-service-details li{border-color:#ffffff2b;color:#e4daeb}
+.ni-home .ni-service-visuals>.ni-service-landscape{height:auto;aspect-ratio:16/9;align-self:end;overflow:hidden}
+.ni-service-landscape>.es-video{width:100%;height:100%;background:transparent}
+.ni-service-landscape video{width:100%;height:100%;object-fit:cover}
+/* Each frame enters from the physical left. Color follows viewport progress. */
+.ni-services .ni-service-visuals>div{--service-gray:1}
+.ni-home .ni-services .ni-service-visuals video{filter:grayscale(var(--service-gray,1));will-change:filter}
+.ni-home[data-motion=off] .ni-services .ni-service-visuals>div{opacity:1!important;transform:none!important;--service-gray:0!important}
+@media(prefers-reduced-motion:reduce){.ni-services .ni-service-visuals>div{opacity:1!important;transform:none!important;--service-gray:0!important}.ni-home .ni-services .ni-service-visuals video{will-change:auto}}

@@ -1,0 +1,256 @@
+[
+  {
+    "index": 1,
+    "file": "040dbab1189bbc7487cdfade332d245a.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 156.14,
+    "audio": true,
+    "size_mb": 20.55
+  },
+  {
+    "index": 2,
+    "file": "0587fd1e9eeaa1407cdbf22ecec6bf6c.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 12.8,
+    "audio": true,
+    "size_mb": 2.19
+  },
+  {
+    "index": 3,
+    "file": "0e34d9662053b1aa5673e7f8b4c74024.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 17.88,
+    "audio": true,
+    "size_mb": 2.89,
+    "migratedTo": "public/assets/originals/videos/burger-preparation-original.mp4"
+  },
+  {
+    "index": 4,
+    "file": "106fed62e30fe9497c558b872739f9d0.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 22.78,
+    "audio": true,
+    "size_mb": 5.64
+  },
+  {
+    "index": 5,
+    "file": "15639b8a689b40ec0de39c46448df11f.mp4",
+    "width": 960,
+    "height": 720,
+    "duration": 13.2,
+    "audio": true,
+    "size_mb": 3.84,
+    "migratedTo": "public/assets/originals/videos/saffron-rice-table-original.mp4"
+  },
+  {
+    "index": 6,
+    "file": "216215bba195a9b6bc66619dac0b5dec.mp4",
+    "width": 1024,
+    "height": 1280,
+    "duration": 31.68,
+    "audio": true,
+    "size_mb": 15.46,
+    "migratedTo": "public/assets/originals/videos/pasta-preparation-original.mp4"
+  },
+  {
+    "index": 7,
+    "file": "233ce54aaab1f294d434010fbdb88471.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 14.29,
+    "audio": true,
+    "size_mb": 2.69
+  },
+  {
+    "index": 8,
+    "file": "2a225ed1e8d7566d71a87ad8c81d00bd.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 38.82,
+    "audio": true,
+    "size_mb": 6.94
+  },
+  {
+    "index": 9,
+    "file": "3bf7d1243d3dc2fa46013dc91f983185.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 35.88,
+    "audio": true,
+    "size_mb": 5.03
+  },
+  {
+    "index": 10,
+    "file": "433f5637d7d05800d7355b7fec98d4e7.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 12.56,
+    "audio": true,
+    "size_mb": 3.52
+  },
+  {
+    "index": 11,
+    "file": "691cca48283ea3b3c97fb73ce450d426.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 43.73,
+    "audio": true,
+    "size_mb": 6.84
+  },
+  {
+    "index": 12,
+    "file": "6e4bda96d78f5c6cbd59f4bebfc93756.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 25.68,
+    "audio": true,
+    "size_mb": 7.08,
+    "migratedTo": "public/assets/originals/videos/fitness-training-original.mp4"
+  },
+  {
+    "index": 13,
+    "file": "79eb9de1393d60df72947d8096610c50.mp4",
+    "width": 1280,
+    "height": 720,
+    "duration": 37.65,
+    "audio": true,
+    "size_mb": 6.75,
+    "migratedTo": "public/assets/originals/videos/cafe-hospitality-conversation-original.mp4"
+  },
+  {
+    "index": 14,
+    "file": "86ddfb8573e45a70029071e70217790d.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 11.05,
+    "audio": true,
+    "size_mb": 2.73,
+    "migratedTo": "public/assets/originals/videos/prayer-beads-closeup-original.mp4"
+  },
+  {
+    "index": 15,
+    "file": "98cfbaae29f0ed136c563c727a5f2729.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 71.29,
+    "audio": true,
+    "size_mb": 10.29
+  },
+  {
+    "index": 16,
+    "file": "a06142280e8b767ab845732ca55df9b8.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 29.93,
+    "audio": true,
+    "size_mb": 8.54,
+    "migratedTo": "public/assets/originals/videos/hospitality-entrance-original.mp4"
+  },
+  {
+    "index": 17,
+    "file": "b74dda107c345b6b67a0cf68a1ea9dc5.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 28.67,
+    "audio": true,
+    "size_mb": 6.64
+  },
+  {
+    "index": 18,
+    "file": "c180da0245d44862853c7227856d55e6.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 15.08,
+    "audio": true,
+    "size_mb": 4.74
+  },
+  {
+    "index": 19,
+    "file": "c667388c6bff24ed907ad8b1b09694da.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 19.57,
+    "audio": true,
+    "size_mb": 6.26
+  },
+  {
+    "index": 20,
+    "file": "cf003239cfc4f5caf130c69347372768.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 12.26,
+    "audio": true,
+    "size_mb": 2.42
+  },
+  {
+    "index": 21,
+    "file": "d2d48540a9863232719f9f674ffb5595.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 14.83,
+    "audio": true,
+    "size_mb": 4.63
+  },
+  {
+    "index": 22,
+    "file": "e150e667d03be8555a6d992ceee1ccc0.mp4",
+    "width": 1280,
+    "height": 720,
+    "duration": 33.05,
+    "audio": true,
+    "size_mb": 9.62,
+    "migratedTo": "public/assets/originals/videos/cinematic-hands-monochrome-original.mp4"
+  },
+  {
+    "index": 23,
+    "file": "e339318c6552870137d89c1f70b8282d.mp4",
+    "width": 960,
+    "height": 720,
+    "duration": 7.06,
+    "audio": true,
+    "size_mb": 0.76,
+    "migratedTo": "public/assets/originals/videos/ramadan-lantern-original.mp4"
+  },
+  {
+    "index": 24,
+    "file": "e6515b12f921385163d486b73b838412.mp4",
+    "width": 960,
+    "height": 720,
+    "duration": 5.58,
+    "audio": true,
+    "size_mb": 0.85,
+    "migratedTo": "public/assets/originals/videos/invitation-paper-details-original.mp4"
+  },
+  {
+    "index": 25,
+    "file": "e8f35af8d01668f496b622f01a91094e.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 13.18,
+    "audio": true,
+    "size_mb": 3.79
+  },
+  {
+    "index": 26,
+    "file": "f440cdeb3874d81f40b473a652a9d277.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 57.11,
+    "audio": true,
+    "size_mb": 8.83
+  },
+  {
+    "index": 27,
+    "file": "fe023bba8b6fa45bf8771c9fbc4a9185.mp4",
+    "width": 720,
+    "height": 1280,
+    "duration": 12.59,
+    "audio": true,
+    "size_mb": 3.23,
+    "migratedTo": "public/assets/originals/videos/fries-neon-sign-original.mp4"
+  }
+]

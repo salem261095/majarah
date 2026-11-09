@@ -1,0 +1,12 @@
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
+@source '../components';
+@theme{
+ --color-brand-violet:#190c89;
+ --color-brand-deep:#15076e;
+ --color-brand-midnight:#0b0915;
+ --color-brand-blue:#14299f;
+ --color-brand-purple:#7d41af;
+ --font-arabic:'Noto Sans Arabic',Tahoma,sans-serif;
+ --font-handwritten:'Playpen Sans Arabic',cursive;
+}

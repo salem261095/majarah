@@ -1,0 +1,19 @@
+'use client';
+import { useEffect, useRef, useState } from 'react';
+import { ArrowUpLeft, Check, Copy } from 'lucide-react';
+import { serviceCatalog, findProject } from '@/lib/public-content';
+import { buildInquirySummary, inquiryMailto } from '@/lib/inquiry-summary';
+export function ContactInquiry({initialService='',initialProject=''}:{initialService?:string;initialProject?:string}){
+ const form=useRef<HTMLFormElement>(null),manual=useRef<HTMLTextAreaElement>(null);
+ const [status,setStatus]=useState<'idle'|'copied'|'manual'>('idle'),[summary,setSummary]=useState('');
+ useEffect(()=>{if(status==='manual'){manual.current?.focus();manual.current?.select()}},[status]);
+ const project=findProject(initialProject);
+ async function prepare(){
+  if(!form.current?.reportValidity())return;
+  const values=new FormData(form.current),value=(name:string)=>String(values.get(name)||'');
+  const service=serviceCatalog.find(item=>item.slug===value('service'))?.title||'لنحدّد معًا';
+  const text=buildInquirySummary({name:value('name'),email:value('email'),company:value('company'),phone:value('phone'),service,message:value('message'),budget:value('budget'),timeline:value('timeline')});
+  setSummary(text);try{await navigator.clipboard.writeText(text);setStatus('copied')}catch{setStatus('manual')}
+ }
+ return <form ref={form} className="ip-inquiry" onChange={()=>setStatus('idle')} onSubmit={event=>{event.preventDefault();void prepare()}}><div className="ip-form-pair"><label>الاسم <span>*</span><input name="name" autoComplete="name" required minLength={2} maxLength={100}/></label><label>البريد الإلكتروني <span>*</span><input name="email" autoComplete="email" type="email" dir="ltr" required maxLength={254}/></label></div><div className="ip-form-pair"><label>المنشأة <small>اختياري</small><input name="company" autoComplete="organization" maxLength={150}/></label><label>الهاتف <small>اختياري</small><input name="phone" autoComplete="tel" type="tel" dir="ltr" maxLength={30}/></label></div><label>ما الذي تحتاجه؟ <span>*</span><select name="service" required defaultValue={serviceCatalog.some(item=>item.slug===initialService)?initialService:'unsure'}><option value="unsure">لنحدّد معًا</option><optgroup label="الإنتاج الإبداعي">{serviceCatalog.filter(item=>item.group==='creative').map(item=><option value={item.slug} key={item.slug}>{item.title}</option>)}</optgroup><optgroup label="الخدمات التسويقية">{serviceCatalog.filter(item=>item.group==='marketing').map(item=><option value={item.slug} key={item.slug}>{item.title}</option>)}</optgroup></select></label><label>حدّثنا عن فكرتك <span>*</span><textarea name="message" required minLength={10} maxLength={3000} rows={5} defaultValue={project?`أود مناقشة مشروع بروح «${project.title}». `:''} placeholder="ما الهدف؟ وما الذي تتخيّل أن نصنعه معًا؟"/></label><div className="ip-form-pair"><label>الميزانية المقترحة <small>اختياري</small><input name="budget" maxLength={100} placeholder="نطاق تقريبي أو لنناقش معًا"/></label><label>الموعد المقترح <small>اختياري</small><input name="timeline" maxLength={100} placeholder="متى تودّ أن يبدأ المشروع؟"/></label></div><button className="ip-primary" type="submit">{status==='copied'?'تم نسخ ملخص المشروع':'جهّز ملخص المشروع'}{status==='copied'?<Check size={20}/>:<Copy size={20}/>}</button><p className="ip-form-hint">جهّز ملخص فكرتك، ثم أرسله إلينا عبر تطبيق البريد.</p><div className="ip-inquiry-status" role="status" aria-live="polite">{status==='copied'&&<><p>ملخصك جاهز ومنسوخ.</p><a href={inquiryMailto(summary)}>افتح تطبيق البريد لإرساله<ArrowUpLeft size={18}/></a></>}{status==='manual'&&<><p>يمكنك نسخ الملخص من الحقل أدناه أو فتحه في تطبيق البريد.</p><label>ملخص مشروعك<textarea ref={manual} readOnly value={summary} rows={8}/></label><a href={inquiryMailto(summary)}>افتح تطبيق البريد<ArrowUpLeft size={18}/></a></>}</div></form>;
+}

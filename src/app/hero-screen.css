@@ -1,0 +1,58 @@
+/* The compact header and hero share one viewport. Video frames meet with no gutters. */
+.ni-home{--hero-header-height:78px}
+.ni-home .rh-hero{height:calc(100svh - var(--hero-header-height));min-height:0;max-height:none;padding:80px var(--ni-gutter) 80px;display:block;overflow:hidden}
+.rh-video-strip{position:absolute;inset:0;z-index:-4;overflow:hidden;margin:0;padding:0;pointer-events:none;direction:ltr;unicode-bidi:isolate}
+.rh-portrait-track{position:absolute;left:0;top:0;display:flex;flex-direction:row;direction:ltr;width:max-content;height:100%;margin:0;padding:0;gap:0;will-change:transform}
+.rh-portrait-set{display:flex;flex-direction:row;direction:ltr;flex:none;height:100%;margin:0;padding:0;gap:0}
+.rh-portrait-tile{flex:none;width:calc(100vw / 3);height:100%;margin:0;padding:0;overflow:hidden}
+.rh-portrait-tile>.es-video{display:block;width:100%;height:100%;margin:0;padding:0;border:0;border-radius:0;background:#0b0915}
+.rh-portrait-tile video{display:block;width:100%;height:100%;object-fit:cover;filter:grayscale(1) brightness(.64);margin:0;padding:0;border:0;border-radius:0}
+.ni-home .rh-overlay{background:linear-gradient(0deg,#0b0915ed,transparent 44%,#0b091544),linear-gradient(90deg,#0b091533,#0b09150a 50%,#0b091533)}
+.ni-home .rh-content{height:100%;width:100%;display:grid;grid-template-rows:minmax(0,1fr) auto;gap:14px;margin:0;max-width:none}
+.rh-identity{position:relative;min-height:0;display:grid;place-items:center;isolation:isolate}
+.ni-home .rh-wordmark{width:100%;font-size:var(--wordmark-size,30vw);line-height:1.12;padding:0;margin:0;text-align:center;align-self:center}
+.ni-home .rh-tagline{position:absolute;inset-inline:0;top:auto;bottom:13%;transform:none;width:100%;max-width:none;margin:0!important;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:0 .35em;text-align:center;font-size:clamp(26px,3.4vw,56px);line-height:1.4!important;z-index:2;text-shadow:0 2px 18px #0b091570;pointer-events:none}
+.rh-tagline>svg{width:min(510px,70%);inset-inline-start:50%;transform:translateX(50%);top:90%;height:16px}
+.ni-home .rh-support{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:15px;width:100%;margin:0;padding:0;text-align:center}
+.ni-home .rh-support>p{padding:0;margin:0;max-width:650px;font-size:var(--type-body);line-height:1.6;text-align:center;color:#e1d8e7}
+.ni-home .rh-actions{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:24px;margin:0;padding:0;width:100%}
+.ni-home .rh-primary{grid-column:2;min-width:190px;justify-content:center;gap:25px}
+.ni-home .rh-secondary{grid-column:3;justify-self:start;justify-content:center}
+.ni-home .rh-kicker{top:23px;padding-bottom:15px}
+.ni-home .rh-bottom{bottom:17px}
+@media(max-width:760px){
+ .ni-home{--hero-header-height:72px}
+ .ni-home .rh-hero{height:calc(100svh - var(--hero-header-height));min-height:0;max-height:none;padding:90px var(--ni-gutter) 90px}
+ .rh-portrait-tile{width:100vw}
+ .ni-home .rh-content{gap:18px}
+ .ni-home .rh-tagline{bottom:17%;font-size:clamp(22px,5.8vw,34px);gap:0 .3em;line-height:1.4!important}
+ .rh-tagline>svg{width:75%;height:13px}
+ .ni-home .rh-support{gap:18px}
+ .ni-home .rh-support>p{font-size:15px;line-height:1.6;max-width:340px;text-wrap:balance}
+ .ni-home .rh-actions{gap:6px 0}.ni-home .rh-secondary{grid-column:2;grid-row:2;justify-self:center}
+ .ni-home .rh-primary{min-width:170px;min-height:46px;padding:12px 16px;font-size:14px}
+ .ni-home .rh-secondary{font-size:14px;min-height:44px}
+ .ni-home .rh-bottom{bottom:15px}
+ .ni-home .rh-kicker{top:19px;gap:16px;padding-bottom:15px}
+}
+/* Keep the exact viewport height on landscape phones and short laptop screens. */
+@media(max-height:700px){
+ .ni-home .rh-hero{padding-top:65px;padding-bottom:75px}
+ .ni-home .rh-content{gap:8px}
+ .ni-home .rh-support{gap:10px}
+ .ni-home .rh-support>p{font-size:14px;line-height:1.5;max-width:620px}
+ .ni-home .rh-primary,.ni-home .rh-secondary{min-height:40px;padding-block:10px;font-size:13px}
+ .ni-home .rh-tagline{bottom:10%;font-size:clamp(20px,3vw,40px)}
+ .ni-home .rh-bottom{bottom:10px}
+}
+@media(max-height:480px){
+ .ni-home .rh-hero{padding-top:48px;padding-bottom:66px}
+ .ni-home .rh-kicker{top:10px;padding-bottom:10px}
+ .ni-home .rh-support>p{display:none}
+ .ni-home .rh-tagline{bottom:9%;font-size:22px}
+ .ni-home .rh-bottom{bottom:8px}
+}
+@media(prefers-reduced-motion:reduce){.rh-portrait-track{transform:none!important;will-change:auto}}
+
+/* The mobile handwriting needs a brighter treatment over moving films. */
+@media(max-width:760px){.ni-home .rh-tagline{color:#f4f0e9;text-shadow:0 2px 18px #0b0915bb}.ni-home .rh-tagline path{stroke:#f4f0e9}}

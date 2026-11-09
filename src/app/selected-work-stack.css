@@ -1,0 +1,23 @@
+/* Selected work only: every opaque card lands at the same point and covers its predecessor. */
+#hd-work{--project-stack-top:92px;--project-stack-bottom:16px}
+#hd-work .ni-project-stack{position:relative;isolation:isolate;padding-bottom:0}
+#hd-work .ni-project{position:sticky;top:var(--project-stack-top);z-index:calc(var(--project-index) + 1);height:calc(100svh - var(--project-stack-top) - var(--project-stack-bottom));min-height:0;max-height:none;margin-bottom:32px;padding-inline:var(--ni-gutter);display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:0;align-content:stretch;background:#0b0915;overflow:hidden;border-top:1px solid #ffffff26;box-shadow:0 -18px 45px #0003;transform:none}
+#hd-work .ni-project:last-child{margin-bottom:0}
+#hd-work .ni-project-top{height:auto;min-height:76px;padding-block:20px;align-items:start}
+#hd-work .ni-project-cover{height:100%;min-height:0;max-height:none;align-self:stretch;opacity:1;transform:none;clip-path:none}
+#hd-work .ni-project-caption{min-height:104px;padding-block:21px 25px;align-items:start}
+#hd-work .ni-project-ambient{z-index:-1}
+@media(max-width:760px){
+ #hd-work{--project-stack-top:84px;--project-stack-bottom:12px}
+ #hd-work .ni-project-stack{padding-bottom:0}
+ #hd-work .ni-project{margin-bottom:24px}
+ #hd-work .ni-project-top{min-height:0;padding-block:16px;gap:4px 16px}
+ #hd-work .ni-project-caption{min-height:0;gap:12px;padding-block:18px 22px}
+}
+@media(max-height:600px) and (min-width:761px){
+ #hd-work .ni-project-top{min-height:0;padding-block:12px}
+ #hd-work .ni-project-caption{min-height:0;padding-block:14px 16px}
+ #hd-work .ni-project-caption h3{font-size:24px}
+}
+/* Reading the projects should not require a pinned sequence with reduced motion. */
+@media(prefers-reduced-motion:reduce){#hd-work .ni-project-stack{padding-bottom:0}#hd-work .ni-project{position:relative;top:auto;height:auto;min-height:0;display:flex;gap:0;box-shadow:none;margin-bottom:40px}#hd-work .ni-project-cover{height:55svh;min-height:240px;max-height:680px}}

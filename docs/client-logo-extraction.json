@@ -1,0 +1,241 @@
+{
+  "source": "public/assets/originals/images/client-logo-sheet.png",
+  "sourceWidth": 399,
+  "sourceHeight": 501,
+  "logos": [
+    {
+      "id": "client-01",
+      "label": "حركة",
+      "src": "/assets/clients/client-01-haraka.svg",
+      "width": 92,
+      "height": 50,
+      "crop": {
+        "x": 35,
+        "y": 56,
+        "width": 92,
+        "height": 50
+      }
+    },
+    {
+      "id": "client-02",
+      "label": "سماوة",
+      "src": "/assets/clients/client-02-samawa.svg",
+      "width": 95,
+      "height": 38,
+      "crop": {
+        "x": 150,
+        "y": 67,
+        "width": 95,
+        "height": 38
+      }
+    },
+    {
+      "id": "client-03",
+      "label": "تكوين",
+      "src": "/assets/clients/client-03-takween.svg",
+      "width": 97,
+      "height": 43,
+      "crop": {
+        "x": 263,
+        "y": 61,
+        "width": 97,
+        "height": 43
+      }
+    },
+    {
+      "id": "client-04",
+      "label": "ريدوا",
+      "src": "/assets/clients/client-04-ridwa.svg",
+      "width": 98,
+      "height": 48,
+      "crop": {
+        "x": 34,
+        "y": 122,
+        "width": 98,
+        "height": 48
+      }
+    },
+    {
+      "id": "client-05",
+      "label": "الحوش",
+      "src": "/assets/clients/client-05-alhosh-gallery.svg",
+      "width": 97,
+      "height": 50,
+      "crop": {
+        "x": 149,
+        "y": 123,
+        "width": 97,
+        "height": 50
+      }
+    },
+    {
+      "id": "client-06",
+      "label": "بساط",
+      "src": "/assets/clients/client-06-bessat.svg",
+      "width": 96,
+      "height": 59,
+      "crop": {
+        "x": 264,
+        "y": 115,
+        "width": 96,
+        "height": 59
+      }
+    },
+    {
+      "id": "client-07",
+      "label": "سوق البلد",
+      "src": "/assets/clients/client-07-souq-al-balad.svg",
+      "width": 97,
+      "height": 61,
+      "crop": {
+        "x": 35,
+        "y": 181,
+        "width": 97,
+        "height": 61
+      }
+    },
+    {
+      "id": "client-08",
+      "label": "نهاوند",
+      "src": "/assets/clients/client-08-nahawand.svg",
+      "width": 93,
+      "height": 59,
+      "crop": {
+        "x": 149,
+        "y": 183,
+        "width": 93,
+        "height": 59
+      }
+    },
+    {
+      "id": "client-09",
+      "label": "حكاوي",
+      "src": "/assets/clients/client-09-hakawi.svg",
+      "width": 97,
+      "height": 58,
+      "crop": {
+        "x": 264,
+        "y": 185,
+        "width": 97,
+        "height": 58
+      }
+    },
+    {
+      "id": "client-10",
+      "label": "شعار العميل 10",
+      "src": "/assets/clients/client-10-mark-10.svg",
+      "width": 85,
+      "height": 43,
+      "crop": {
+        "x": 35,
+        "y": 259,
+        "width": 85,
+        "height": 43
+      }
+    },
+    {
+      "id": "client-11",
+      "label": "سبوتلي",
+      "src": "/assets/clients/client-11-spotly.svg",
+      "width": 95,
+      "height": 52,
+      "crop": {
+        "x": 150,
+        "y": 252,
+        "width": 95,
+        "height": 52
+      }
+    },
+    {
+      "id": "client-12",
+      "label": "خزينة",
+      "src": "/assets/clients/client-12-khazena.svg",
+      "width": 96,
+      "height": 44,
+      "crop": {
+        "x": 264,
+        "y": 257,
+        "width": 96,
+        "height": 44
+      }
+    },
+    {
+      "id": "client-13",
+      "label": "سحاب",
+      "src": "/assets/clients/client-13-sahab.svg",
+      "width": 94,
+      "height": 46,
+      "crop": {
+        "x": 37,
+        "y": 314,
+        "width": 94,
+        "height": 46
+      }
+    },
+    {
+      "id": "client-14",
+      "label": "حطب",
+      "src": "/assets/clients/client-14-hatab.svg",
+      "width": 91,
+      "height": 49,
+      "crop": {
+        "x": 153,
+        "y": 314,
+        "width": 91,
+        "height": 49
+      }
+    },
+    {
+      "id": "client-15",
+      "label": "الخيمة",
+      "src": "/assets/clients/client-15-alkhaimah.svg",
+      "width": 97,
+      "height": 43,
+      "crop": {
+        "x": 265,
+        "y": 317,
+        "width": 97,
+        "height": 43
+      }
+    },
+    {
+      "id": "client-16",
+      "label": "نمرة",
+      "src": "/assets/clients/client-16-numrah.svg",
+      "width": 77,
+      "height": 49,
+      "crop": {
+        "x": 39,
+        "y": 375,
+        "width": 77,
+        "height": 49
+      }
+    },
+    {
+      "id": "client-17",
+      "label": "درب",
+      "src": "/assets/clients/client-17-darb.svg",
+      "width": 82,
+      "height": 56,
+      "crop": {
+        "x": 155,
+        "y": 370,
+        "width": 82,
+        "height": 56
+      }
+    },
+    {
+      "id": "client-18",
+      "label": "شعار العميل 18",
+      "src": "/assets/clients/client-18-mark-18.svg",
+      "width": 96,
+      "height": 55,
+      "crop": {
+        "x": 264,
+        "y": 370,
+        "width": 96,
+        "height": 55
+      }
+    }
+  ]
+}
